@@ -1,2 +1,3 @@
-# CV-Online
-CV - Curriculum Vitae --- Rene Padua
+#  💻📑📚CV | *Curriculum Vitae* | Renê Pádua
+
+Repositório contendo meu currículo de forma mais moderna
