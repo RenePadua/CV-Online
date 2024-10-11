@@ -1,0 +1,94 @@
+a.navbar-brand {
+	font-family: "Times New Roman", Times, serif;
+	color: #233343;
+}
+
+a.navbar-brand {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 60px 0px 60px 0px;
+}
+
+a.navbar-brand:link {
+	text-decoration: none;
+  }
+  
+a.navbar-brand:visited {
+	text-decoration: none;
+  }
+  
+a.navbar-brand:hover {
+	text-decoration: none;
+	color: #233343;
+  }
+  
+a.navbar-brand:active {
+	text-decoration: none;
+  }
+
+h1 {
+	font-weight: bold;
+	display: flex;
+	justify-content:right;
+	margin-left: 30%;
+}
+
+
+header h1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 3.2em;
+}
+
+#foto {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: fixed;
+	margin-top: 80px;
+	margin-right: 50%;
+
+	/*z-index: 2; */ /*Foto fica na frente*/
+
+
+}
+
+#coluna1, #coluna2 {
+	background-color: #152739;
+}
+
+#col2linha1 div.grid {
+	background-color: #152739;
+}
+
+#coluna1b {
+	background-color: #233343;
+}
+
+
+#qrcodeCol {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+#qrcode {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: auto;
+	width: 200px;
+	height: 200px;
+}
+
+
+#skills {
+	font-family: "Times New Roman", Times, serif;
+	background-color: #fcba03;
+	color: #233343;
+}
+
+#col2linha1 div {
+	background-color: #233343;
+}
