@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>CV</title>
   </head>
-  <body class="container bg-dark bg-body-tertiary" data-bs-theme="dark">
+  <body class="container bg-body-tertiary" data-bs-theme="dark">
     <header class="navbar bg-warning bg-body-warning" data-bs-theme="warning">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -21,10 +21,10 @@
         </a>
       </div>
     </header>
-    <main class="p-0 m-0 border-0 bd-example m-0 border-0 bd-example-row">
+    <main class="p-0 m-0 border-0 bd-example m-0 border-0 bd-example-row border-opacity-10">
       <div class="container text-center">
         <div class="row">
-          <div id="coluna1" class="col-sm-3 bg-dark">
+          <div id="coluna1" class="col-sm-3 bg-dark border border-0">
             <div id="coluna1b">
               <div id="coluna1bInside">
                 <img id="foto" src="img/rene.jpg"  alt="Logo" width="220" height="220" class="d-inline-block align-text-top">
@@ -64,14 +64,14 @@
                 
             </div>
           </div>
-          <div id="coluna2" class="col-sm-9 bg-dark">
+          <div id="coluna2" class="col-sm-9 bg-dark border border-0">
             <div id="col2linha1" class="row">
               <div class="grid bg-dark">
               <div id="coluna2a" class="p-2 container border border-white g-col-8">
                 <!-- Level 2: .col-9 .col-sm-8 -->
                  <!-- Links (Mail/LinkedIn/WhatsApp/GitHub) -->
                 <div id="coluna2alinha1" class="d-flex justify-content-around">
-                  <div class="p-4" data-bs-title="This top tooltip is themed via CSS variables.">
+                  <div class="p-4">
                       <i class="text-warning bi bi-mailbox"
                           data-bs-toggle="tooltip"
                           data-bs-placement="top"
@@ -100,27 +100,43 @@
             </div>
             </div>
             
-            <div class="row">
+            <div class="py-3 text-center">
+              <div class="row justify-content-between">
+                <div class="grid gap-3">
 
-              <div class="col-8 col-sm-6 bg-dark">
-                <!-- Level 2: .col-8 .col-sm-6 -->
-                <h4 class="text-warning">Sobre mim!</h4>
-                <div class="bg-secondary">
-                  <!-- Level 2-coluna1 -->
-                  <img class="m-1" src="img/profile.png" width="auto" height="325px">
+                <div class="p-2 g-col-6 bg-dark border border-warning-subtle">
+                  <!-- Level 2: .col-8 .col-sm-6 -->
+                  <h4 class="text-warning">Sobre mim!</h4>
+                  <div class="bg-secondary">
+                    <!-- Level 2-coluna1 -->
+                    <img class="m-2 text-center" src="img/profile.png" width="auto" height="310px">
+                  </div>
+                </div>
+                
+                <div class="p-2 g-col-6 bg-dark border border-warning-subtle">
+                  <!-- Level 2: .col-4 .col-sm-6 -->
+                  <i class="text-warning bi bi-school"></i><h4 class="text-warning">🎓 Educação</h4>
+                  <div class="bg-dark">
+                    <!-- Level 2-coluna1 -->
+                  </div>
                 </div>
               </div>
-              
-              <div class="col-4 col-sm-6 bg-dark">
-                <!-- Level 2: .col-4 .col-sm-6 -->
-                <i class="text-warning bi bi-school"></i><h4 class="text-warning">🎓 Educação</h4>
-                <div class="bg-dark">
-                  <!-- Level 2-coluna1 -->
-                </div>
               </div>
-
             </div>
 
+            <div class="py-1 text-center">
+             <div class="row d-flex justify-content-between">
+              <div class="pb-3 grid gap-3">
+               <div class="p-2 g-col-6 border border-warning-subtle">
+                Level 3: .col-8 .col-sm-6
+               </div>
+               <div class="p-2 g-col-6 border border-warning-subtle">
+                 Level 3: .col-4 .col-sm-6
+               </div>
+              </div>
+             </div>
+            </div>
+            
             <div class="row">
               <div class="col-8 col-sm-6">
                 Level 3: .col-8 .col-sm-6
