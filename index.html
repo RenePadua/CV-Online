@@ -31,9 +31,12 @@
 
                 <div id="mapa" class="p-3">
                 <img src="img/brasil.png"  alt="Mapa do Brasil" width="220" height="220" class="d-inline-block align-text-top">
-                  <p>
-                    <img src="img/bird.png"  alt="Ícone de cegonha" width="50" height="50" class="d-inline-block">
-                    27/03/1984
+                <br>
+                <b>São Paulo-SP</b>
+                  <p class="text-center">
+                    <img src="img/bird.png"  alt="Ícone de cegonha" width="50" height="50" class="d-inline-block mt-3">
+                    <br>
+                    <b id="nascimento"></b>
                   </p>
                 </div>
               </div>
@@ -44,40 +47,66 @@
                   <h4 class="text-warning"><i class="material-icons">&#xe153;</i> Idioma</h4>
                     <div>
                       INGLÊS
+                      <div id="levelSkills" class="container text-center mt-1">
+                        <div>🟡🟡🟡⚫⚫⚫⚫⚫</div>
+                      </div>
                     </div>
+
                 </div>
                 <div class="text-center mt-3">
                   <h4 class="text-warning"><i class="material-icons">computer</i> Softwares</h4>
-                    <div>
+                    <div class="mt-3">
                       HTML
+                      <div id="levelSkills" class="container text-center mt-1">
+                        <div>🟡🟡🟡🟡🟡🟡⚫⚫</div>
+                      </div>
                     </div>
-                    <div>
+                    <div class="text-center mt-3">
                       CSS
+                      <div id="levelSkills" class="container text-center mt-1">
+                        <div>🟡🟡🟡🟡⚫⚫⚫⚫</div>
+                      </div>
                     </div>
-                    <div>
+                    <div class="text-center mt-3">
                       JAVASCRIPT
+                      <div id="levelSkills" class="container text-center mt-1">
+                        <div>🟡🟡🟡⚫⚫⚫⚫⚫</div>
+                      </div>
                     </div>
-                    <div>
+                    <div class="text-center mt-3">
                       PHP
+                      <div id="levelSkills" class="container text-center mt-1">
+                        <div>🟡🟡🟡⚫⚫⚫⚫⚫</div>
+                      </div>
                     </div>
                 </div>
+
+
+                <div id="skills" class="mt-3">
+                  <h3>Hobbies</h3>
+                </div>
+                  <div class="text-center mt-3">
+                    <h4 class="text-warning">
+                      <div id="hobbies" class="grid p-1 d-flex justify-content-around">
+                      <i class="material-icons m-1 pb-3">directions_run</i>
+                      <i class="material-icons m-1 pt-3">videogame_asset</i>
+                      <i class="material-icons m-1 pb-3">directions_bike</i>
+                    </div>
+                    </h4>
+                  </div>
+
                 
             </div>
           </div>
           <div id="coluna2" class="col-sm-9 bg-dark border border-0">
             <div id="col2linha1" class="row">
               <div class="grid bg-dark">
-              <div id="coluna2a" class="p-2 container border border-white g-col-8">
+              <div id="coluna2a" class="p-2 container border g-col-8">
                 <!-- Level 2: .col-9 .col-sm-8 -->
                  <!-- Links (Mail/LinkedIn/WhatsApp/GitHub) -->
                 <div id="coluna2alinha1" class="d-flex justify-content-around">
                   <div class="p-4">
-                      <i class="text-warning bi bi-mailbox"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          data-bs-custom-class="custom-tooltip"
-                          data-bs-title="Email: rene.padua@gmail.com"
-                      ></i>
+                      <i class="text-warning bi bi-mailbox"></i>
                   </div>
                   <div class="p-4">
                     <i class="text-warning bi bi-linkedin"></i>
@@ -93,7 +122,7 @@
                 </div>
               </div>
 
-              <div id="qrcodeCol" class="container border border-white g-col-4">
+              <div id="qrcodeCol" class="container border g-col-4">
                 <!-- Level 2: .col-3 .col-sm-4  -->
                   <img id="qrcode" src="img/qrcode-rene.png">
               </div>
@@ -104,48 +133,121 @@
               <div class="row justify-content-between">
                 <div class="grid gap-3">
 
-                <div class="p-2 g-col-6 bg-dark border border-warning-subtle">
+                <div id="fundoAbout01" class="p-2 g-col-6">
                   <!-- Level 2: .col-8 .col-sm-6 -->
-                  <h4 class="text-warning">Sobre mim!</h4>
-                  <div class="bg-secondary">
-                    <!-- Level 2-coluna1 -->
-                    <img class="m-2 text-center" src="img/profile.png" width="auto" height="310px">
-                  </div>
+                  <h4 class="text-warning">🧔🏻 Sobre mim!</h4>
+                    <div id="fundoAbout02">
+                      <!-- Level 2-coluna1 -->
+                      <img class="m-2 text-center" src="img/profile.png" width="auto" height="310px">
+                    </div>
                 </div>
                 
-                <div class="p-2 g-col-6 bg-dark border border-warning-subtle">
+                <div id="fundoEducation" class="p-2 g-col-6">
                   <!-- Level 2: .col-4 .col-sm-6 -->
                   <i class="text-warning bi bi-school"></i><h4 class="text-warning">🎓 Educação</h4>
-                  <div class="bg-dark">
+                  <div>
                     <!-- Level 2-coluna1 -->
+                     <div id="educationList" class="container mt-3 text-start">
+                      <ul>
+                        <li>
+                          <b>2023</b>
+                          <br>
+                          <span class="text-warning">Fatec-Baixada Santista</span>
+                          <br>
+                          Sistemas para Internet
+                        </li>
+                        <li>
+                          <b>2008</b>
+                          <br>
+                          <span class="text-warning">Uniso</span>
+                          <br>
+                          Direito
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
               </div>
             </div>
 
-            <div class="py-1 text-center">
+            <div  id="fundoAbout01" class="py-1 text-center">
+              <h4 class="text-warning">👔 Profissional</h4>
              <div class="row d-flex justify-content-between">
               <div class="pb-3 grid gap-3">
-               <div class="p-2 g-col-6 border border-warning-subtle">
-                Level 3: .col-8 .col-sm-6
-               </div>
-               <div class="p-2 g-col-6 border border-warning-subtle">
-                 Level 3: .col-4 .col-sm-6
-               </div>
-              </div>
-             </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-8 col-sm-6">
-                Level 3: .col-8 .col-sm-6
-              </div>
-              <div class="col-4 col-sm-6">
-                Level 3: .col-4 .col-sm-6
-              </div>
-            </div>
-
+               <div class="p-2 g-col-6">
+                <!-- Level 3: .col-8 .col-sm-6 -->
+                <div id="profissionalList" class="container mt-3 text-start">
+                  <ul>
+                    <li>
+                      <b>2022-2023</b>
+                      <br>
+                      <span class="text-warning">Sec. de Educação-SV</span>
+                      <br>
+                      Estagiário de TI
+                    </li>
+                    <li>
+                      <b>2020</b>
+                      <br>
+                      <span class="text-warning">Fatec-BS</span>
+                      <br>
+                      Estagiário CCW - Equipe Web
+                    </li>
+                    <li>
+                      <b>2013-2017</b>
+                      <br>
+                      <span class="text-warning">Gafisa S.A.</span>
+                      <br>
+                      Assistente Jurídico
+                    </li>
+                    <li>
+                      <b>2010-2011</b>
+                      <br>
+                      <span class="text-warning">Habitcasa</span>
+                      <br>
+                      Analista de Operações
+                    </li>
+                  </ul>
+                </div>
+                </div>
+                <div class="p-2 g-col-6">
+                  <!-- Level 3: .col-4 .col-sm-6 -->
+                  <div id="profissionalList" class="container mt-3 text-start">
+                    <ul>
+                      <li>
+                        <b>2007-2009</b>
+                        <br>
+                        <span class="text-warning">Procuradoria do Estado</span>
+                        <br>
+                        Estagiário de Direito
+                      </li>
+                      <li>
+                        <b>2005-2007</b>
+                        <br>
+                        <span class="text-warning">DireitoNet</span>
+                        <br>
+                        Redator Estagiário
+                      </li>
+                      <li>
+                        <b>2002-2003</b>
+                        <br>
+                        <span class="text-warning">Justiça Federal</span>
+                        <br>
+                        Estagiário de Direito
+                      </li>
+                      <li>
+                        <b>2007</b>
+                        <br>
+                        <span class="text-warning">Connect Design</span>
+                        <br>
+                        Auxiliar Técnico
+                      </li>
+                    </ul>
+                  </div>                  
+                </div>
+                </div>
+                </div>
+                </div>
           </div>
         </div>
       </div>
@@ -154,6 +256,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
 
   </body>
 </html>

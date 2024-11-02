@@ -49,12 +49,40 @@ header h1 {
 	justify-content: center;
 	align-items: center;
 
-
-
     z-index: 2; /*Foto fica na frente*/
 	/*z-index: 2; */ /*Foto fica na frente*/
+}
 
+#fundoAbout01, #fundoEducation {
+	background-color: #181a1d !important;
+}
 
+#fundoAbout02 {
+	background-color: #181a1d !important;
+}
+
+#educationList li {
+	background-image: url("D:/Backup - Rene/Rene's files/Textos/CV-Rene/Site-CV/CV-Online/img/setas.png"); /* Caminho para a sua imagem */
+    background-repeat: no-repeat;
+	z-index: 2;
+	padding-left: 60px; /* Espaço para o ícone da imagem */
+    margin-bottom: 50px; /* Espaço entre os itens da lista */
+	list-style: none; /* Remove o estilo padrão da lista */
+}
+
+#educationList {
+    list-style: none; /* Remove o estilo padrão da lista */
+    padding-left: 20px; /* Ajusta o espaçamento da lista */
+}
+
+#profissionalList {
+    list-style: none; /* Remove o estilo padrão da lista */
+    padding-left: 20px; /* Ajusta o espaçamento da lista */
+}
+
+#profissionalList li::marker {
+    color: #ffc107;
+    
 }
 
 #coluna1, #coluna2 {
@@ -105,6 +133,15 @@ i {
 	font-family: "Times New Roman", Times, serif;
 	background-color: #fcba03;
 	color: #233343;
+	margin-top: -2px;
+}
+
+#levelskills {
+	font-size: 12px;
+}
+
+#hobbies i {
+	font-size: 40px !important;
 }
 
 #col2linha1 div {
