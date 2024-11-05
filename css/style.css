@@ -27,6 +27,12 @@ a.navbar-brand:active {
 	text-decoration: none;
   }
 
+.popover-body a:link, .popover-body a:visited, .popover-body a:active{
+	text-decoration: none;
+	color: #fcba03;
+}
+
+
 h1 {
 	font-weight: bold;
 	display: flex;
@@ -146,4 +152,19 @@ i {
 
 #col2linha1 div {
 	background-color: #233343;
+}
+
+
+.popover-header {
+	--bs-popover-max-width: 200px;
+	--bs-popover-border-color: #ccc;
+	--bs-popover-header-bg: rgb(35 51 67);
+	--bs-popover-header-color: var(--bs-white);
+	--bs-popover-body-padding-x: 1rem;
+	--bs-popover-body-padding-y: .5rem;
+  }
+
+.popover-body {
+    padding: var(--bs-popover-body-padding-y) var(--bs-popover-body-padding-x);
+    color: #fcba03 !important; /*var(--bs-popover-body-color);*/
 }

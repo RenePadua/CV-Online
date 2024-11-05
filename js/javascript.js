@@ -1,4 +1,3 @@
-// Aguarda o carregamento do conteúdo HTML antes de executar o código
 document.addEventListener("DOMContentLoaded", function() {
     const dataFixa = new Date(1984, 2, 27);
 
@@ -13,3 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Exibe o resultado no HTML
     document.getElementById("nascimento").textContent = `${Anos} anos`;
 });
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
