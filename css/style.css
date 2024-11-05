@@ -1,3 +1,7 @@
+navbar {
+	height: 250px;
+}
+
 a.navbar-brand {
 	font-family: "Times New Roman", Times, serif;
 	color: #233343;
@@ -7,7 +11,7 @@ a.navbar-brand {
 	display: flex;
 	justify-content: center;
 	margin: auto;
-	padding: 60px 0px 60px 0px;
+	padding: 30px 0px 30px 30px;
 }
 
 a.navbar-brand:link {
@@ -43,7 +47,7 @@ h1 {
 
 header h1 {
 	font-family: "Times New Roman", Times, serif;
-	font-size: 3.2em;
+	font-size: 2.8em;
 }
 
 #foto {
@@ -59,12 +63,20 @@ header h1 {
 	/*z-index: 2; */ /*Foto fica na frente*/
 }
 
-#fundoAbout01, #fundoEducation {
-	background-color: #181a1d !important;
+#fundoAbout01 {
+	background-color: #233343;
 }
 
-#fundoAbout02 {
-	background-color: #181a1d !important;
+#fundoEducation {
+	background-color: #233343;
+}
+
+#educationTitle, #aboutTitle {
+	background-color: #1d2a37;
+}
+
+#educationFront {
+	background-color:#233343;
 }
 
 #educationList li {
@@ -81,6 +93,11 @@ header h1 {
     padding-left: 20px; /* Ajusta o espaçamento da lista */
 }
 
+#profissionalTitle {
+	background-color: #1d2a37;
+}
+
+
 #profissionalList {
     list-style: none; /* Remove o estilo padrão da lista */
     padding-left: 20px; /* Ajusta o espaçamento da lista */
@@ -92,11 +109,11 @@ header h1 {
 }
 
 #coluna1, #coluna2 {
-	background-color: #152739;
+	background-color: #0e0f103b;
 }
 
 #col2linha1 div.grid {
-	background-color: #152739;
+	background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 #coluna1b {
