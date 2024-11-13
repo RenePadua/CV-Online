@@ -91,37 +91,42 @@ header h1 {
 	background-color: #233343;
 }
 
+
+
+
+ul {
+    list-style-type: none; /* Remove o marcador padrão */
+    padding-left: 0; /* Remove o padding padrão da lista */
+}
+
+ul li::before {
+    content: url('https://github.com/RenePadua/CV-Online/blob/main/img/setas.png?raw=true');
+    display: inline-block;
+    width: 16px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 16px;
+    margin-right: -20px; /* Espaçamento entre o marcador e o texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    position: relative;
+    top: 2px; /* Ajuste a posição vertical */
+    left: -50px; /* Ajuste a posição horizontal */
+}
+
 #educationList li,
 #profissionalList li {
-	background-image: url("img/setas.png");
 	/* Caminho para a sua imagem */
 	background-repeat: no-repeat;
 	z-index: 2;
-	padding-left: 60px;
+	padding-left: 30px;
 	/* Espaço para o ícone da imagem */
 	margin-bottom: 50px;
 	/* Espaço entre os itens da lista */
-	list-style: none;
-	/* Remove o estilo padrão da lista */
-}
 
-#educationList {
-	list-style: none;
 	/* Remove o estilo padrão da lista */
-	padding-left: 20px;
-	/* Ajusta o espaçamento da lista */
 }
 
 #profissionalTitle {
 	color: #ffee00;
 	background-color: #1d2a37;
-}
-
-#profissionalList {
-	list-style: none;
-	/* Remove o estilo padrão da lista */
-	padding-left: 20px;
-	/* Ajusta o espaçamento da lista */
 }
 
 #profissionalList span,
