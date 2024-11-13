@@ -1,3 +1,7 @@
+h4 {
+	color: #ffee00;
+}
+
 navbar {
 	height: 250px;
 }
@@ -16,31 +20,33 @@ a.navbar-brand {
 
 a.navbar-brand:link {
 	text-decoration: none;
-  }
-  
+}
+
 a.navbar-brand:visited {
 	text-decoration: none;
-  }
-  
+}
+
 a.navbar-brand:hover {
 	text-decoration: none;
 	color: #233343;
-  }
-  
+}
+
 a.navbar-brand:active {
 	text-decoration: none;
-  }
+}
 
-.popover-body a:link, .popover-body a:visited, .popover-body a:active{
+.popover-body a:link,
+.popover-body a:visited,
+.popover-body a:active {
 	text-decoration: none;
-	color: #fcba03;
+	color: #ffee00;
 }
 
 
 h1 {
 	font-weight: bold;
 	display: flex;
-	justify-content:right;
+	justify-content: right;
 	margin-left: 30%;
 }
 
@@ -48,6 +54,7 @@ h1 {
 header h1 {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 2.8em;
+	color: #233343;
 }
 
 #foto {
@@ -59,56 +66,71 @@ header h1 {
 	justify-content: center;
 	align-items: center;
 
-    z-index: 2; /*Foto fica na frente*/
-	/*z-index: 2; */ /*Foto fica na frente*/
+	z-index: 2;
+	/*Foto fica na frente*/
+	/*z-index: 2; */
+	/*Foto fica na frente*/
 }
 
 #fundoAbout01 {
 	background-color: #233343;
+	color: #ffee00;
 }
 
 #fundoEducation {
 	background-color: #233343;
 }
 
-#educationTitle, #aboutTitle {
+#educationTitle,
+#aboutTitle {
+	color: #ffee00;
 	background-color: #1d2a37;
 }
 
 #educationFront {
-	background-color:#233343;
+	background-color: #233343;
 }
 
-#educationList li {
-	background-image: url("D:/Backup - Rene/Rene's files/Textos/CV-Rene/Site-CV/CV-Online/img/setas.png"); /* Caminho para a sua imagem */
-    background-repeat: no-repeat;
+#educationList li,
+#profissionalList li {
+	background-image: url("img/setas.png");
+	/* Caminho para a sua imagem */
+	background-repeat: no-repeat;
 	z-index: 2;
-	padding-left: 60px; /* Espaço para o ícone da imagem */
-    margin-bottom: 50px; /* Espaço entre os itens da lista */
-	list-style: none; /* Remove o estilo padrão da lista */
+	padding-left: 60px;
+	/* Espaço para o ícone da imagem */
+	margin-bottom: 50px;
+	/* Espaço entre os itens da lista */
+	list-style: none;
+	/* Remove o estilo padrão da lista */
 }
 
 #educationList {
-    list-style: none; /* Remove o estilo padrão da lista */
-    padding-left: 20px; /* Ajusta o espaçamento da lista */
+	list-style: none;
+	/* Remove o estilo padrão da lista */
+	padding-left: 20px;
+	/* Ajusta o espaçamento da lista */
 }
 
 #profissionalTitle {
+	color: #ffee00;
 	background-color: #1d2a37;
 }
 
-
 #profissionalList {
-    list-style: none; /* Remove o estilo padrão da lista */
-    padding-left: 20px; /* Ajusta o espaçamento da lista */
+	list-style: none;
+	/* Remove o estilo padrão da lista */
+	padding-left: 20px;
+	/* Ajusta o espaçamento da lista */
 }
 
-#profissionalList li::marker {
-    color: #ffc107;
-    
+#profissionalList span,
+#educationList span {
+	color: #ffee00;
 }
 
-#coluna1, #coluna2 {
+#coluna1,
+#coluna2 {
 	background-color: #0e0f103b;
 }
 
@@ -122,15 +144,21 @@ header h1 {
 
 #mapa {
 	padding-top: 90px;
-
 }
 
 #coluna2a {
 	border-radius: 15px;
+	color: #ffee00;
 }
 
 i {
 	font-size: 3em;
+	color: #ffee00;
+}
+
+#idioma-heading,
+#software-heading {
+	color: #ffee00;
 }
 
 #qrcodeCol {
@@ -151,10 +179,9 @@ i {
 	height: 200px;
 }
 
-
 #skills {
 	font-family: "Times New Roman", Times, serif;
-	background-color: #fcba03;
+	background-color: #ffee00;
 	color: #233343;
 	margin-top: -2px;
 }
@@ -171,7 +198,6 @@ i {
 	background-color: #233343;
 }
 
-
 .popover-header {
 	--bs-popover-max-width: 200px;
 	--bs-popover-border-color: #ccc;
@@ -179,9 +205,10 @@ i {
 	--bs-popover-header-color: var(--bs-white);
 	--bs-popover-body-padding-x: 1rem;
 	--bs-popover-body-padding-y: .5rem;
-  }
+}
 
 .popover-body {
-    padding: var(--bs-popover-body-padding-y) var(--bs-popover-body-padding-x);
-    color: #fcba03 !important; /*var(--bs-popover-body-color);*/
+	padding: var(--bs-popover-body-padding-y) var(--bs-popover-body-padding-x);
+	color: #ffee00 !important;
+	/*var(--bs-popover-body-color);*/
 }
