@@ -1,8 +1,29 @@
+header {
+	background-color: #ffee00;
+}
+
+h1 {
+	font-weight: bold;
+	display: flex;
+	justify-content: right;
+	margin-left: 30%;
+}
+
+
+header h1, header h2 {
+	font-family: "Times New Roman", Times, serif;
+	color: #233343;
+}
+
+header h1 {
+	font-size: 2.8em;
+}
+
 h4 {
 	color: #ffee00;
 }
 
-navbar {
+.navbar {
 	height: 250px;
 }
 
@@ -42,21 +63,6 @@ a.navbar-brand:active {
 	color: #ffee00;
 }
 
-
-h1 {
-	font-weight: bold;
-	display: flex;
-	justify-content: right;
-	margin-left: 30%;
-}
-
-
-header h1 {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 2.8em;
-	color: #233343;
-}
-
 #foto {
 	margin-top: -130px;
 	border: 1px solid #fff;
@@ -77,8 +83,9 @@ header h1 {
 	color: #ffee00;
 }
 
-#fundoEducation {
+#fundoEducation, #fundoProfissional {
 	background-color: #233343;
+	max-height: 302px;
 }
 
 #educationTitle,
@@ -90,9 +97,6 @@ header h1 {
 #educationFront {
 	background-color: #233343;
 }
-
-
-
 
 ul {
     list-style-type: none; /* Remove o marcador padrão */
@@ -124,6 +128,24 @@ ul li::before {
 	/* Remove o estilo padrão da lista */
 }
 
+#profissionalList i {
+	color: #ffee00;
+	display: inline-flex;
+}
+
+.popover-body ul {
+	color: #ffee00;
+	list-style-type: disc;
+}
+
+.popover-body ul li {
+    margin-bottom: 10px;
+}
+
+.popover-body ul li::before {
+	content: none;
+}
+
 #profissionalTitle {
 	color: #ffee00;
 	background-color: #1d2a37;
@@ -143,8 +165,9 @@ ul li::before {
 	background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
-#coluna1b {
+#coluna1b, #coluna2a {
 	background-color: #233343;
+	max-height: 1016px;
 }
 
 #mapa {
@@ -156,9 +179,8 @@ ul li::before {
 	color: #ffee00;
 }
 
-i {
+#coluna2alinha1, #coluna2alinha2 {
 	font-size: 3em;
-	color: #ffee00;
 }
 
 #idioma-heading,
@@ -195,8 +217,13 @@ i {
 	font-size: 12px;
 }
 
+#hobbies {
+	color: #233343;
+}
+
 #hobbies i {
 	font-size: 40px !important;
+	color: #ffee00;
 }
 
 #col2linha1 div {
