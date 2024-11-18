@@ -1,12 +1,19 @@
+/* ----------------------------------- Desktop/General style -------------------------------------------------- */
+
 header {
 	background-color: #ffee00;
 }
 
+
+
 h1 {
+
 	font-weight: bold;
+ /*
 	display: flex;
 	justify-content: right;
 	margin-left: 30%;
+ */
 }
 
 
@@ -243,4 +250,79 @@ ul li::before {
 	padding: var(--bs-popover-body-padding-y) var(--bs-popover-body-padding-x);
 	color: #ffee00 !important;
 	/*var(--bs-popover-body-color);*/
+}
+
+
+
+
+/* ----------------------------------- @media Styles -------------------------------------------------- */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 921px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 920px) {
+
+}
+
+@media (min-width: 415px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 270px) and (max-width: 414px) {
+
+	header.navbar {
+	
+
+	}
+
+	header h1 {
+		font-size: 2.4em;
+		margin-top: -30px;
+	}
+
+	header h2 {
+		font-size: 0.9em;
+	}
+
+	img#foto {
+		margin-top: -90px;
+		width: 170px;
+		height: 170px;
+	}
+
+	#foto {
+		border: 3px solid #fff;
+	}
+
+	#coluna2a {
+		grid-column: auto / span 12;
+	}
+
+	#qrcodeCol {
+		display: none;
+	}
+
+	#fundoAbout02 img {
+		height: 150px;
+		width: auto;
+	}
+
+	#grupoAbout02 {
+		display: block;
+
+	}
+
+	#fundoEducation {
+		margin-top: 40px;
+	}
+
+	#fundoEducation, #fundoProfissional {
+		padding-bottom: 5px;
+	}
+
 }
