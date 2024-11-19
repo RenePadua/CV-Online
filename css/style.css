@@ -1,7 +1,7 @@
 /* ----------------------------------- Desktop/General style -------------------------------------------------- */
 
 header {
-	background-color: #ffee00;
+	background-color: #ffee00 !important;
 }
 
 
@@ -19,7 +19,7 @@ h1 {
 
 header h1, header h2 {
 	font-family: "Times New Roman", Times, serif;
-	color: #233343;
+	color: #233343 !important;
 }
 
 header h1 {
@@ -215,8 +215,8 @@ ul li::before {
 
 #skills {
 	font-family: "Times New Roman", Times, serif;
-	background-color: #ffee00;
-	color: #233343;
+	background-color: #ffee00 !important;
+	color: #233343 !important;
 	margin-top: -2px;
 }
 
@@ -225,10 +225,16 @@ ul li::before {
 }
 
 #hobbies {
-	color: #233343;
+	font-family: "Times New Roman", Times, serif;
+	background-color: #ffee00 !important;
+	color: #233343 !important;
 }
 
-#hobbies i {
+#hobbiesGrid {
+	display: block;
+	}
+
+#hobbiesIco i {
 	font-size: 40px !important;
 	color: #ffee00;
 }
@@ -267,6 +273,88 @@ ul li::before {
 
 @media (min-width: 768px) and (max-width: 920px) {
 
+	header h1 {
+		font-size: 3.2em;
+		margin-top: -30px;
+	}
+
+	header h2 {
+		font-size: 1.6em;
+	}
+
+	img#foto {
+		margin-top: -90px;
+		width: 150px;
+		height: 150px;
+	}
+
+	#foto {
+		border: 3px solid #fff;
+	}
+
+	#mapa img {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 20px;
+	}
+
+	#mapa {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#coluna1b {
+		max-height: 1230px !important;
+	}
+
+	#hobbies {
+		margin-top:40px !important;
+		margin-bottom: 10px !important;
+	}
+
+	#hobbiesIco{
+		display: grid !important;
+		}
+
+	#hobbiesIco i{
+			padding: .5rem !important; ;
+		}
+
+	#coluna2a {
+		grid-column: auto / span 6;
+	}
+
+	#qrcodeCol {
+		grid-column: auto / span 6;
+	}
+		
+	#coluna2b {
+		padding-top: 20px !important;
+		padding-bottom: 20px !important;
+	}
+
+	div#fundoAbout01 {
+		margin-bottom: 1rem !important;
+	}
+
+	#fundoAbout02 img {
+		height: 200px;
+		width: auto;
+	}
+
+	#grupoAbout02 {
+		display: block;
+
+	}
+
+	#fundoProfissional {
+	margin-top: 20px;
+	}
+
+	#fundoEducation, #fundoProfissional {
+	padding-bottom: 1px;
+	}
+
 }
 
 @media (min-width: 415px) and (max-width: 767px) {
@@ -292,6 +380,10 @@ ul li::before {
 
 	#foto {
 		border: 3px solid #fff;
+	}
+
+	#hobbiesGrid {
+	display: block;
 	}
 
 	#coluna2a {
