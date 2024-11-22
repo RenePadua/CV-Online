@@ -30,15 +30,8 @@ header {
 	
 }
 
-
 h1 {
-
 	font-weight: bold;
- /*
-	display: flex;
-	justify-content: right;
-	margin-left: 30%;
- */
 }
 
 
@@ -54,6 +47,16 @@ header h1 {
 h4 {
 	color: var(--custom-yellow);
 }
+
+.shareButton a {
+	color: #000;
+	position: absolute;
+	  right: 10px;
+	  top: 2px;
+	  z-index: 4;
+	  font-size: 20px;
+	}
+	
 
 .navbar {
 	height: 250px;
@@ -199,7 +202,7 @@ ul li::before {
 
 #coluna1b, #coluna2a {
 	background-color: var(--custom-text);
-	max-height: 1016px;
+	max-height: 1017px;
 }
 
 #mapa {
@@ -245,9 +248,47 @@ ul li::before {
 	margin-top: -2px;
 }
 
-#levelskills {
+#levelSkills {
 	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+
 }
+
+.progress {
+    background-color: #333; /* Fundo da barra */
+    border: 1px solid #fff; /* Contorno da barra */
+}
+
+.progress .progress-bar {
+	background-color: #ffee00; /* Cor principal */
+    background-image: linear-gradient(
+		135deg,
+		rgba(35, 51, 67, 1.6) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(35, 51, 67, 1.6) 50%,
+		rgba(35, 51, 67, 1.6) 75%,
+		transparent 75%,
+		transparent
+    );
+    background-size: 1rem 1rem;
+	animation: progress-animation 45s linear infinite;
+	
+}
+
+@keyframes progress-animation {
+	from {
+		background-position: -100% 0;
+	}
+	to {
+		background-position: 100% 0;
+	}
+}
+
+
 
 #hobbies {
 	font-family: "Times New Roman", Times, serif;
@@ -257,11 +298,12 @@ ul li::before {
 
 #hobbiesGrid {
 	display: block;
+	padding-bottom: 10px;
 	}
 
 #hobbiesIco i {
 	font-size: 40px !important;
-	color: var(--custom-yellow);#ffee00;
+	color: var(--custom-yellow);
 }
 
 #col2linha1 div {
@@ -330,6 +372,12 @@ ul li::before {
 
 	#coluna1b {
 		max-height: 1230px !important;
+		height: 1196px !important;
+	}
+
+	#levelSkills {
+		padding-bottom: 20px ;
+	
 	}
 
 	#hobbies {
