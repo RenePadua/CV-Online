@@ -49,10 +49,10 @@ h4 {
 }
 
 .shareButton a {
-	color: #000;
+	color: #212529;
 	position: absolute;
-	  right: 10px;
-	  top: 2px;
+	  right: 20px;
+	  top: 10px;
 	  z-index: 4;
 	  font-size: 20px;
 	}
@@ -87,9 +87,6 @@ a.navbar-brand:hover {
 	color: var(--custom-text);
 }
 
-a.navbar-brand:active {
-	text-decoration: none;
-}
 
 .popover-body a:link,
 .popover-body a:visited,
@@ -99,8 +96,8 @@ a.navbar-brand:active {
 }
 
 #foto {
-	margin-top: -130px;
-	border: 1px solid #fff;
+	margin-top: -120px;
+	border: 15px solid #212529;
 	border-radius: 50%;
 	/*position: fixed;*/
 	display: flex;
@@ -111,6 +108,14 @@ a.navbar-brand:active {
 	/*Foto fica na frente*/
 	/*z-index: 2; */
 	/*Foto fica na frente*/
+}
+
+#coluna1 {
+	max-height: 1060px;
+}
+
+#coluna2 {
+	max-height: 1060px;
 }
 
 #fundoAbout01 {
@@ -339,7 +344,6 @@ ul li::before {
 }
 
 @media (min-width: 768px) and (max-width: 920px) {
-
 	header h1 {
 		font-size: 3.2em;
 		margin-top: -30px;
@@ -349,14 +353,23 @@ ul li::before {
 		font-size: 1.6em;
 	}
 
+	.shareButton a{
+		font-size: 1.6em;
+	}
+
 	img#foto {
-		margin-top: -90px;
-		width: 150px;
-		height: 150px;
+		margin-top: -75px;
+		width: 130px;
+		height: 130px;
 	}
 
 	#foto {
-		border: 3px solid #fff;
+		/*border: 3px solid #fff;*/
+		border: 12px solid #212529;
+	}
+
+	main {
+		padding-bottom: 20px !important;
 	}
 
 	#mapa img {
@@ -370,9 +383,17 @@ ul li::before {
 		margin-bottom: 20px;
 	}
 
+	#coluna1 {
+		max-height:max-content;
+	}
+
 	#coluna1b {
-		max-height: 1230px !important;
-		height: 1196px !important;
+		padding-bottom: 40px;
+		max-height:max-content;
+	}
+
+	#coluna2 {
+		max-height:1222px;
 	}
 
 	#levelSkills {
@@ -403,7 +424,6 @@ ul li::before {
 		
 	#coluna2b {
 		padding-top: 20px !important;
-		padding-bottom: 20px !important;
 	}
 
 	div#fundoAbout01 {
@@ -417,7 +437,6 @@ ul li::before {
 
 	#grupoAbout02 {
 		display: block;
-
 	}
 
 	#fundoProfissional {
@@ -436,27 +455,62 @@ ul li::before {
 
 @media (min-width: 270px) and (max-width: 414px) {
 
+	body {
+		max-height: 2465px;
+	}
+
+	#coluna2b {
+		max-height: 1010px;		
+	}
+
+	.shareButton a {
+		margin-top: 20px;
+		right: 20px;
+	}
+
+	header.navbar {
+        top: -20px;
+        width:100%;
+	}
+
+	main {
+		top: -100px;
+	}
+
 	header h1 {
-		font-size: 2.4em;
-		margin-top: -30px;
+		font-size: 1.8em;
+		margin-top: -80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	header h2 {
 		font-size: 0.9em;
+		margin-top: 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
+
 	img#foto {
-		margin-top: -90px;
-		width: 170px;
-		height: 170px;
+		margin-top: -50px;
+		width: 90px;
+		height: 90px;
 	}
 
 	#foto {
-		border: 3px solid #fff;
+		/*border: 3px solid #fff;*/
+		border: 12px solid #212529;
 	}
 
 	#hobbiesGrid {
 	display: block;
+	}
+
+	#coluna2 {
+		max-height: max-content;
 	}
 
 	#coluna2a {
