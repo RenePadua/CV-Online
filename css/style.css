@@ -48,7 +48,7 @@ h4 {
 	color: var(--custom-yellow);
 }
 
-.shareButton a {
+.shareButton i {
 	color: #212529;
 	position: absolute;
 	  right: 20px;
@@ -87,12 +87,16 @@ a.navbar-brand:hover {
 	color: var(--custom-text);
 }
 
-
 .popover-body a:link,
 .popover-body a:visited,
 .popover-body a:active {
-	text-decoration: none;
 	color: var(--custom-yellow);
+}
+
+ul#linkedin, ul#github, ul#whatsapp{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 #foto {
@@ -116,7 +120,9 @@ a.navbar-brand:hover {
 
 #coluna2 {
 	max-height: 1060px;
+	margin-bottom: 30px;
 }
+
 
 #fundoAbout01 {
 	background-color: var(--custom-text);
@@ -324,26 +330,60 @@ ul li::before {
 	--bs-popover-body-padding-y: .5rem;
 }
 
-.popover-body {
+.custom-popover .popover-body, .popover-body {
 	padding: var(--bs-popover-body-padding-y) var(--bs-popover-body-padding-x);
 	color: var(--custom-yellow);
-	/*var(--bs-popover-body-color);*/
 }
-
 
 
 
 /* ----------------------------------- @media Styles -------------------------------------------------- */
 
 @media (min-width: 992px) and (max-width: 1200px) {
+	
+	#coluna1, #coluna2 {
+		margin-bottom: 30px;
+	}
+
+	.shareButton i {
+		font-size: 1.6em;
+	}
+
+	img#foto {
+		margin-top: -95px;
+		width: 170px;
+		height: 170px;
+	}
+
+	main {
+		padding-bottom: 20px !important;
+	}
+
+	#mapa img {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 20px;
+	}
+
+	#mapa {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	#coluna2b {
+		padding-top: 15px !important;
+		padding-bottom: 0px !important;
+	}
+
+	#fundoAbout01 {
+		margin-bottom: 15px !important;
+	}
+	
 
 }
 
-@media (min-width: 921px) and (max-width: 991px) {
+@media (min-width: 912px) and (max-width: 991px) {
 
-}
-
-@media (min-width: 768px) and (max-width: 920px) {
 	header h1 {
 		font-size: 3.2em;
 		margin-top: -30px;
@@ -353,7 +393,7 @@ ul li::before {
 		font-size: 1.6em;
 	}
 
-	.shareButton a{
+	.shareButton i {
 		font-size: 1.6em;
 	}
 
@@ -366,10 +406,6 @@ ul li::before {
 	#foto {
 		/*border: 3px solid #fff;*/
 		border: 12px solid #212529;
-	}
-
-	main {
-		padding-bottom: 20px !important;
 	}
 
 	#mapa img {
@@ -388,17 +424,16 @@ ul li::before {
 	}
 
 	#coluna1b {
-		padding-bottom: 40px;
+		padding-bottom: 10px;
 		max-height:max-content;
 	}
 
-	#coluna2 {
-		max-height:1222px;
+	#coluna1, #coluna2 {
+		max-height:1222px !important;
 	}
 
 	#levelSkills {
-		padding-bottom: 20px ;
-	
+		padding-bottom: 20px;
 	}
 
 	#hobbies {
@@ -406,8 +441,15 @@ ul li::before {
 		margin-bottom: 10px !important;
 	}
 
+	#hobbiesGroup {
+		padding-top: 30px;
+	}
+
 	#hobbiesIco{
 		display: grid !important;
+		grid-template-rows: repeat(3, auto); /* 3 linhas automáticas */
+		height: max-content !important; /* Ou a altura do contêiner pai */
+		place-content: center; /* Centraliza o grupo de itens no contêiner */
 		}
 
 	#hobbiesIco i{
@@ -449,12 +491,379 @@ ul li::before {
 
 }
 
-@media (min-width: 415px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 911px) {
+	header h1 {
+		font-size: 3.2em;
+		margin-top: -30px;
+	}
+
+	header h2 {
+		font-size: 1.6em;
+	}
+
+	.shareButton i {
+		font-size: 1.6em;
+	}
+
+	img#foto {
+		margin-top: -75px;
+		width: 130px;
+		height: 130px;
+	}
+
+	#foto {
+		/*border: 3px solid #fff;*/
+		border: 12px solid #212529;
+	}
+
+	main {
+		padding-bottom: 20px !important;
+	}
+
+	#mapa img {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 20px;
+	}
+
+	#mapa {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#coluna1 {
+		max-height:max-content;
+	}
+
+	#coluna1b {
+		padding-bottom: 10px;
+		max-height:max-content;
+	}
+
+	#coluna2 {
+		max-height:1222px;
+	}
+
+	#levelSkills {
+		padding-bottom: 20px ;
+	
+	}
+
+	#hobbies {
+		margin-top:40px !important;
+		margin-bottom: 10px !important;
+	}
+
+	#hobbiesGroup {
+		padding-top: 30px;
+	}
+
+	#hobbiesIco{
+		display: grid !important;
+		grid-template-rows: repeat(3, auto); /* 3 linhas automáticas */
+		height: max-content !important; /* Ou a altura do contêiner pai */
+		place-content: center; /* Centraliza o grupo de itens no contêiner */
+		}
+
+	#hobbiesIco i{
+			padding: .5rem !important; ;
+		}
+
+	#coluna2a {
+		grid-column: auto / span 6;
+	}
+
+	#qrcodeCol {
+		grid-column: auto / span 6;
+	}
+		
+	#coluna2b {
+		padding-top: 20px !important;
+	}
+
+	div#fundoAbout01 {
+		margin-bottom: 1rem !important;
+	}
+
+	#fundoAbout02 img {
+		height: 200px;
+		width: auto;
+	}
+
+	#grupoAbout02 {
+		display: block;
+	}
+
+	#fundoProfissional {
+	margin-top: 20px;
+	}
+
+	#fundoEducation, #fundoProfissional {
+	padding-bottom: 1px;
+	}
 
 }
 
-@media (min-width: 270px) and (max-width: 414px) {
+@media (min-width: 667px) and (max-width: 767px) and (orientation: landscape) {
 
+	.container {
+		max-width:100% !important;
+	}
+
+	header {
+		height: 200px !important;
+	}
+
+	header h1 {
+		font-size: 2.2em;
+		margin-top: -30px;
+	}
+
+	header h2 {
+		font-size: 1.2em;
+	}
+
+	.shareButton i {
+		font-size: 1.6em;
+	}
+
+	img#foto {
+		margin-top: -65px;
+		width: 110px;
+		height: 110px;
+	}
+
+	#foto {
+		/*border: 3px solid #fff;*/
+		border: 12px solid #212529;
+	}
+
+	#mapa img {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 20px;
+		margin-right: 10px;
+	}
+
+	#mapa b {
+		font-size: 0.9em;
+	}
+
+	#mapa {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#coluna1 {
+		max-height:max-content;
+	}
+
+	#coluna1 h3 {
+		font-size: 1.2em;
+	}
+
+	#coluna1 h4 {
+		font-size: 1.3em;
+	}
+
+	#coluna1b {
+		padding-bottom: 77px;
+		max-height:max-content;
+	}
+
+	#coluna1, #coluna2 {
+		max-height:1224px !important;
+	}
+
+	#levelSkills {
+		padding-bottom: 20px;
+	}
+
+	#nameSkills {
+		font-size: 0.8em;
+	}
+
+	.progress {
+		width: 100% !important;
+	}
+
+	#hobbies {
+		margin-top:40px !important;
+		margin-bottom: 10px !important;
+	}
+
+	#hobbiesGroup {
+		padding-top: 30px;
+	}
+
+	#hobbiesIco{
+		display: grid !important;
+		grid-template-rows: repeat(3, auto); /* 3 linhas automáticas */
+		height: max-content !important; /* Ou a altura do contêiner pai */
+		place-content: center; /* Centraliza o grupo de itens no contêiner */
+		}
+
+	#hobbiesIco i{
+			padding: .5rem !important; ;
+		}
+
+	#coluna2a {
+		grid-column: auto / span 12;
+	}
+
+	#qrcodeCol {
+		display: none;
+	}
+		
+	#coluna2b {
+		padding-top: 20px !important;
+	}
+
+	div#fundoAbout01 {
+		margin-bottom: 1rem !important;
+	}
+
+	#fundoAbout02 img {
+		height: 200px;
+		width: auto;
+	}
+
+	#grupoAbout02 {
+		display: block;
+	}
+
+	#fundoProfissional {
+	margin-top: 20px;
+	}
+
+	#fundoEducation, #fundoProfissional {
+	padding-bottom: 1px;
+	}
+
+}
+
+@media (min-width: 540px) and (max-width:666px) {
+
+	header h1 {
+		font-size: 2.2em;
+		margin-top: -30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header h2 {
+		font-size: 1.2em;
+	}
+
+	.shareButton i {
+		font-size: 1.6em;
+	}
+
+	img#foto {
+		margin-top: -68px;
+		width: 120px;
+		height: 120px;
+	}
+
+	#foto {
+		/*border: 3px solid #fff;*/
+		border: 12px solid #212529;
+	}
+
+	main {
+		padding-bottom: 20px !important;
+	}
+
+	#mapa img {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 20px;
+	}
+
+	#mapa {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#coluna1 {
+		max-height:max-content;
+	}
+
+	#coluna1b {
+		padding-bottom: 10px;
+		max-height:max-content;
+	}
+
+	#coluna2 {
+		max-height:1222px;
+	}
+
+	#levelSkills {
+		padding-bottom: 20px ;
+	}
+
+	.progress {
+		width: 50% !important;
+	}
+
+	#hobbies {
+		margin-top:40px !important;
+		margin-bottom: 10px !important;
+	}
+
+	#hobbiesGroup {
+		padding-top: 30px;
+	}
+
+	#hobbiesIco{
+		grid-template-rows: repeat(3, auto); /* 3 linhas automáticas */
+		height: max-content !important; /* Ou a altura do contêiner pai */
+		place-content: center; /* Centraliza o grupo de itens no contêiner */
+		}
+
+	#hobbiesIco i{
+			padding: .5rem !important; ;
+		}
+
+	#coluna2a {
+		grid-column: auto / span 12;
+	}
+	
+	#qrcodeCol {
+		display: none;
+	}
+		
+	#coluna2b {
+		padding-top: 20px !important;
+		padding-bottom: 30px !important;
+	}
+
+	div#fundoAbout01 {
+		margin-bottom: 1rem !important;
+	}
+
+	#fundoAbout02 img {
+		height: 200px;
+		width: auto;
+	}
+
+	#grupoAbout02 {
+		display: block;
+	}
+
+	#fundoProfissional {
+		margin-top: 20px;
+	}
+	
+	#fundoEducation, #fundoProfissional {
+		padding-bottom: 5px;
+	}
+
+}
+
+
+@media (min-width: 415px) and (max-width: 539px) {
 	body {
 		max-height: 2465px;
 	}
@@ -463,23 +872,23 @@ ul li::before {
 		max-height: 1010px;		
 	}
 
-	.shareButton a {
+	.shareButton i {
 		margin-top: 20px;
 		right: 20px;
 	}
 
 	header.navbar {
-        top: -20px;
+		height: 180px ;
         width:100%;
-	}
-
-	main {
-		top: -100px;
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
 	}
 
 	header h1 {
 		font-size: 1.8em;
-		margin-top: -80px;
+		margin-top: -40px;
+		margin-left: -20px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -488,6 +897,7 @@ ul li::before {
 	header h2 {
 		font-size: 0.9em;
 		margin-top: 0px;
+		margin-left: -20px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -495,9 +905,9 @@ ul li::before {
 
 
 	img#foto {
-		margin-top: -50px;
-		width: 90px;
-		height: 90px;
+		margin-top: -64px;
+		width: 110px;
+		height: 110px;
 	}
 
 	#foto {
@@ -511,6 +921,7 @@ ul li::before {
 
 	#coluna2 {
 		max-height: max-content;
+		margin-bottom: 10px;
 	}
 
 	#coluna2a {
@@ -528,7 +939,106 @@ ul li::before {
 
 	#grupoAbout02 {
 		display: block;
+	}
 
+	#fundoProfissional {
+	margin-top: 40px;
+	}
+
+	#fundoEducation, #fundoProfissional {
+	padding-bottom: 5px;
+	}
+
+}
+
+@media (min-width: 270px) and (max-width: 414px) {
+
+	body {
+		max-height: 2465px;
+	}
+
+	#coluna2b {
+		max-height: 1010px;		
+	}
+
+	.shareButton i {
+		margin-top: 5px;
+		right: 20px;
+	}
+
+	header.navbar {
+		height: 180px ;
+        width:100%;
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+	}
+
+	header h1 {
+		font-size: 1.8em;
+		margin-top: -40px;
+		margin-left: -20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header h2 {
+		font-size: 0.9em;
+		margin-top: 0px;
+		margin-left: -20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	img#foto {
+		margin-top: -64px;
+		width: 110px;
+		height: 110px;
+	}
+
+	#foto {
+		/*border: 3px solid #fff;*/
+		border: 12px solid #212529;
+	}
+
+	#mapa img {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 20px;
+	}
+
+	#mapa {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#hobbiesGrid {
+	display: block;
+	}
+
+	#coluna2 {
+		max-height: max-content;
+		margin-bottom: 10px;
+	}
+
+	#coluna2a {
+		grid-column: auto / span 12;
+	}
+
+	#qrcodeCol {
+		display: none;
+	}
+
+	#fundoAbout02 img {
+		height: 200px;
+		width: auto;
+	}
+
+	#grupoAbout02 {
+		display: block;
 	}
 
 	#fundoProfissional {
