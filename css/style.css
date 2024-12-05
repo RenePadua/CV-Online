@@ -57,6 +57,21 @@ h4 {
 	  font-size: 20px;
 	}
 	
+#lang {
+	color: #212529;
+	position: absolute;
+	  right: 60px;
+	  top: 10px;
+	  z-index: 4;
+	  font-size: 20px;
+}
+
+.dropdown-menu li::before{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
 
 .navbar {
 	height: 250px;
@@ -962,8 +977,16 @@ ul li::before {
 	}
 
 	.shareButton i {
-		margin-top: 5px;
-		right: 20px;
+		margin-top: 35px;
+		right: 10px;
+	}
+
+	#lang {
+		color: #212529;
+		position: absolute;
+		  right: 10px;
+		  top: 10px;
+		  z-index: 4;
 	}
 
 	header.navbar {
