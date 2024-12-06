@@ -173,7 +173,7 @@ ul li::before {
     vertical-align: middle; /* Alinha verticalmente com o texto */
     position: relative;
     top: 2px; /* Ajuste a posição vertical */
-    left: -50px; /* Ajuste a posição horizontal */
+    left: -54px; /* Ajuste a posição horizontal */
 }
 
 #educationList li,
@@ -448,7 +448,7 @@ ul li::before {
 	}
 
 	#levelSkills {
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 	}
 
 	#hobbies {
@@ -559,9 +559,12 @@ ul li::before {
 		max-height:1222px;
 	}
 
+	#nameSkills {
+		margin-top: .25rem !important;
+	}
+
 	#levelSkills {
 		padding-bottom: 20px ;
-	
 	}
 
 	#hobbies {
@@ -617,6 +620,12 @@ ul li::before {
 	padding-bottom: 1px;
 	}
 
+}
+
+@media (min-width: 768px) and (max-width: 882px) and (orientation: landscape) {
+	#coluna2 {
+		max-height: 1223px;
+	}
 }
 
 @media (min-width: 667px) and (max-width: 767px) and (orientation: landscape) {
@@ -696,6 +705,7 @@ ul li::before {
 
 	#nameSkills {
 		font-size: 0.8em;
+		margin-top: .35rem !important;
 	}
 
 	.progress {
@@ -1070,6 +1080,16 @@ ul li::before {
 
 	#fundoEducation, #fundoProfissional {
 	padding-bottom: 5px;
+	}
+
+	ul li::before {
+		margin-right: -20px; /* Espaçamento entre o marcador e o texto */
+		left: -44px; /* Ajuste a posição horizontal */
+	}
+	
+	#educationList li,
+	#profissionalList li {
+		padding-left: 10px;
 	}
 
 }
