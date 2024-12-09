@@ -61,7 +61,7 @@ h4 {
 	color: #212529;
 	position: absolute;
 	  right: 60px;
-	  top: 10px;
+	  top: 8px;
 	  z-index: 4;
 	  font-size: 20px;
 }
@@ -898,8 +898,17 @@ ul li::before {
 	}
 
 	.shareButton i {
-		margin-top: 20px;
-		right: 20px;
+		margin-top: 35px;
+		right: 10px;
+		top: -30px;
+	}
+
+	#lang {
+		color: #212529;
+		position: absolute;
+		  left: 15px;
+		  top: 1px;
+		  z-index: 4;
 	}
 
 	header.navbar {
@@ -989,13 +998,14 @@ ul li::before {
 	.shareButton i {
 		margin-top: 35px;
 		right: 10px;
+		top: -30px;
 	}
 
 	#lang {
 		color: #212529;
 		position: absolute;
-		  right: 10px;
-		  top: 10px;
+		  left: 15px;
+		  top: 1px;
 		  z-index: 4;
 	}
 
