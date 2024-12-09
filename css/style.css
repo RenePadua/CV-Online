@@ -911,6 +911,11 @@ ul li::before {
 		  z-index: 4;
 	}
 
+	ul.dropdown-menu-end[data-bs-popper] {
+		left: 0;
+		right: auto;
+	}
+
 	header.navbar {
 		height: 180px ;
         width:100%;
@@ -1007,6 +1012,11 @@ ul li::before {
 		  left: 15px;
 		  top: 1px;
 		  z-index: 4;
+	}
+
+	ul.dropdown-menu-end[data-bs-popper] {
+		left: 0;
+		right: auto;
 	}
 
 	header.navbar {
