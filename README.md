@@ -10,7 +10,7 @@ Página desenvolvida para apresentar meu currículo na área de TI num modelo "p
 ```
 CV-Online/
 ├── css/
-│ └── styles.css
+│ └── style.css
 │ └── js/
 │   └── javascripts.js
 ├── img/
