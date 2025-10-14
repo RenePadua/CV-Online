@@ -9,7 +9,20 @@
 
 header {
 	background-color: var(--custom-yellow);
+	z-index: -1;
 }
+
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-top: 15px;
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
 
 @media (prefers-color-scheme: dark) {
     header {
@@ -106,7 +119,11 @@ a.navbar-brand:hover {
 
 .popover-body a:link,
 .popover-body a:visited,
-.popover-body a:active {
+.popover-body a:active,
+i.bi.bi-linkedin,
+i.bi.bi-whatsapp,
+i.bi.bi-github
+  {
 	color: var(--custom-yellow);
 }
 
@@ -162,8 +179,8 @@ ul#linkedin, ul#github, ul#whatsapp{
 }
 
 ul {
-    list-style-type: none; /* Remove o marcador padrão */
-    padding-left: 0; /* Remove o padding padrão da lista */
+    list-style-type: none;
+    padding-left: 0; 
 }
 
 ul li::before {
@@ -226,6 +243,21 @@ ul li::before {
 
 #col2linha1 div.grid {
 	background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+	padding-top: 0;
+	display: flex;
+	margin: auto;
+	gap: 15px;
+}
+
+#col2linha2 div.grid {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	gap: 15px;
+}
+
+#fundoEducation, #fundoProfissional {
+	width: 100%;
 }
 
 #coluna1b, #coluna2a {
@@ -495,7 +527,10 @@ ul li::before {
 	}
 
 	#grupoAbout02 {
-		display: block;
+		display: flex;
+		gap: 15px;
+		margin: 0;
+
 	}
 
 	#fundoProfissional {
@@ -503,12 +538,23 @@ ul li::before {
 	}
 
 	#fundoEducation, #fundoProfissional {
-	padding-bottom: 1px;
+	flex: 1;
+	min-width: 0;
 	}
 
 }
 
 @media (min-width: 768px) and (max-width: 911px) {
+	
+	#hobbiesGroup {
+        padding-top: 0px !important;
+    }
+
+	div#coluna2b.py-5.text-center {
+		padding-bottom: 1.12rem !important;
+	}
+
+
 	header h1 {
 		font-size: 3.2em;
 		margin-top: -30px;
@@ -768,6 +814,49 @@ ul li::before {
 	}
 
 }
+
+
+@media (max-width:768px) {
+
+	.navbar>.container-fluid {
+		justify-content: center !important;
+	}
+
+	#col2linha2 div.grid {
+		flex-wrap: wrap;
+	}
+
+	#coluna1b {
+		padding-bottom: 0;
+	}
+
+	div#coluna2b.py-5.text-center {
+		padding-top: 2rem !important;
+	}
+
+	#fundoAbout01 {
+		margin-bottom: 1rem !important;
+	}
+
+	#fundoEducation {
+		padding-top: 2rem !important;
+	}
+
+	#fundoProfissional {
+		margin-top: 1rem !important;
+	}
+
+	#educationList li, #profissionalList li {
+		margin-bottom: 1rem !important;
+	}
+
+
+
+/* ###################  OLHAR A PARTIR DAQUI DE CIMA #########################  */
+
+
+}
+
 
 @media (min-width: 540px) and (max-width:666px) {
 
@@ -1089,11 +1178,21 @@ ul li::before {
 
 	#fundoAbout02 img {
 		height: 200px;
-		width: auto;
+		width: 100%;
 	}
 
+	#fundoAbout02 {
+		display: flex;
+		margin: auto;
+		justify-content: center;
+		padding: .5rem;
+	}
+
+
 	#grupoAbout02 {
-		display: block;
+		display: flex;
+		justify-content: space-between;
+		margin: auto;
 	}
 
 	#fundoProfissional {
