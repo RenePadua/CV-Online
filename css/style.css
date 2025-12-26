@@ -1,1216 +1,140 @@
-@import url('./reset.css');
-
-/* ----------------------------------- Desktop/General style -------------------------------------------------- */
-
+/* =================================================================== */
+/* 1. VARIÁVEIS E ESTILOS GERAIS
+/* =================================================================== */
 :root {
-    --custom-yellow: #ffee00; /* Define uma variável para a cor */
-	--custom-text: #233343; /* Define uma variável para a cor do texto */
+	--custom-yellow: #ffee00;
+	--custom-text: #233343;
+	--custom-card-bg: #2c3e50;
+	--custom-card-header-bg: #34495e;
 }
 
-header {
-	background-color: var(--custom-yellow);
-	z-index: -1;
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-
-.row>* {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-top: 15px;
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y);
-}
-
-
-@media (prefers-color-scheme: dark) {
-    header {
-        background-color: var(--custom-yellow); /* Reaplica a cor no modo escuro */
-    }
-
-	header h1, header h2 {
-        color: var(--custom-text); /* Reaplica a cor no modo escuro */
-    }
-	
-	#skills {
-        background-color: var(--custom-yellow); /* Reaplica a cor no modo escuro */
-		color: var(--custom-text);
-    }
-
-	#hobbies {
-		background-color: var(--custom-yellow);
-		color: var(--custom-text);
-	}
-	
-}
-
-h1 {
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Times New Roman", Times, serif;
 	font-weight: bold;
 }
 
-
-header h1, header h2 {
-	font-family: "Times New Roman", Times, serif;
-	color: var(--custom-text);
-}
-
-header h1 {
-	font-size: 2.8em;
-}
-
-h4 {
+a, .bi-question-circle, .bi-mailbox {
 	color: var(--custom-yellow);
-}
-
-.shareButton i {
-	color: #212529;
-	position: absolute;
-	  right: 20px;
-	  top: 10px;
-	  z-index: 4;
-	  font-size: 20px;
-	}
-	
-#lang {
-	color: #212529;
-	position: absolute;
-	  right: 60px;
-	  top: 8px;
-	  z-index: 4;
-	  font-size: 20px;
-}
-
-.dropdown-menu li::before{
-	display: none;
-	margin: 0;
-	padding: 0;
-}
-
-
-.navbar {
-	height: 250px;
-}
-
-a.navbar-brand {
-	font-family: "Times New Roman", Times, serif;
-	color: var(--custom-text);
-}
-
-a.navbar-brand {
-	display: flex;
-	justify-content: center;
-	margin: auto;
-	padding: 30px 0px 30px 30px;
-}
-
-a.navbar-brand:link {
 	text-decoration: none;
 }
 
-a.navbar-brand:visited {
-	text-decoration: none;
+a:hover {
+	color: #fff;
 }
 
-a.navbar-brand:hover {
-	text-decoration: none;
-	color: var(--custom-text);
+.text-custom-yellow {
+	color: var(--custom-yellow) !important;
 }
 
-.popover-body a:link,
-.popover-body a:visited,
-.popover-body a:active,
-i.bi.bi-linkedin,
-i.bi.bi-whatsapp,
-i.bi.bi-github
-  {
-	color: var(--custom-yellow);
+/* =================================================================== */
+/* 2. COMPONENTES PERSONALIZADOS
+/* =================================================================== */
+
+/* Cabeçalho */
+.header-main {
+	background-color: var(--custom-text);
+	color: #fff;
+	border-bottom: 5px solid var(--custom-yellow);
 }
 
-ul#linkedin, ul#github, ul#whatsapp{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+.header-main h1, .header-main .lead {
+	color: #fff;
 }
 
 #foto {
-	margin-top: -120px;
-	border: 15px solid #212529;
-	border-radius: 50%;
-	/*position: fixed;*/
+	width: 150px;
+	height: 150px;
+}
+
+.bi-translate,
+.bi-share, .bi-printer {
+  font-size: 1.5em; /* Aumenta o tamanho em 5% */
+}
+
+/* Cards */
+.card {
+	background-color: var(--custom-card-bg);
+	border: 1px solid var(--custom-card-header-bg);
+}
+
+.card-header {
+	background-color: var(--custom-card-header-bg);
+	color: var(--custom-yellow);
+	border-bottom: 1px solid var(--custom-card-header-bg);
+}
+
+.card-header h4 {
+	margin: 0;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-
-	z-index: 2;
-	/*Foto fica na frente*/
-	/*z-index: 2; */
-	/*Foto fica na frente*/
-}
-
-#coluna1 {
-	max-height: 1060px;
-}
-
-#coluna2 {
-	max-height: 1060px;
-	margin-bottom: 30px;
-}
-
-
-#fundoAbout01 {
-	background-color: var(--custom-text);
 	color: var(--custom-yellow);
 }
 
-#fundoEducation, #fundoProfissional {
-	background-color: var(--custom-text);
-	max-height: 302px;
+.card-header-icon {
+	vertical-align: middle;
+	margin-right: 8px;
 }
 
-#educationTitle,
-#aboutTitle {
+.card-title-custom {
 	color: var(--custom-yellow);
-	background-color: #1d2a37;
-}
-
-#educationFront {
-	background-color: var(--custom-text);
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0; 
-}
-
-ul li::before {
-    content: url('https://github.com/RenePadua/CV-Online/blob/main/img/setas.png?raw=true');
-    display: inline-block;
-    width: 16px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 16px;
-    margin-right: -20px; /* Espaçamento entre o marcador e o texto */
-    vertical-align: middle; /* Alinha verticalmente com o texto */
-    position: relative;
-    top: 2px; /* Ajuste a posição vertical */
-    left: -54px; /* Ajuste a posição horizontal */
-}
-
-#educationList li,
-#profissionalList li {
-	/* Caminho para a sua imagem */
-	background-repeat: no-repeat;
-	z-index: 2;
-	padding-left: 30px;
-	/* Espaço para o ícone da imagem */
-	margin-bottom: 50px;
-	/* Espaço entre os itens da lista */
-
-	/* Remove o estilo padrão da lista */
-}
-
-#profissionalList i {
-	color: var(--custom-yellow);
-	display: inline-flex;
-}
-
-.popover-body ul {
-	color: var(--custom-yellow);
-	list-style-type: disc;
-}
-
-.popover-body ul li {
-    margin-bottom: 10px;
-}
-
-.popover-body ul li::before {
-	content: none;
-}
-
-#profissionalTitle {
-	color: var(--custom-yellow);
-	background-color: #1d2a37;
-}
-
-#profissionalList span,
-#educationList span {
-	color: var(--custom-yellow);
-}
-
-#coluna1,
-#coluna2 {
-	background-color: #0e0f103b;
-}
-
-#col2linha1 div.grid {
-	background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-	padding-top: 0;
 	display: flex;
-	margin: auto;
-	gap: 15px;
-}
-
-#col2linha2 div.grid {
-	display: flex;
-	margin: auto;
-	justify-content: center;
-	gap: 15px;
-}
-
-#fundoEducation, #fundoProfissional {
-	width: 100%;
-}
-
-#coluna1b, #coluna2a {
-	background-color: var(--custom-text);
-	max-height: 1017px;
-}
-
-#mapa {
-	padding-top: 90px;
-}
-
-#coluna2a {
-	border-radius: 15px;
-	color: var(--custom-yellow);
-}
-
-#coluna2alinha1, #coluna2alinha2 {
-	font-size: 3em;
-}
-
-#idioma-heading,
-#software-heading {
-	color: var(--custom-yellow);
-}
-
-#qrcodeCol {
-	display: flex;
-	justify-content: center;
 	align-items: center;
-	padding: 25px;
-	border-radius: 15px;
 }
 
-#qrcode {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	padding: auto;
-	width: 200px;
-	height: 200px;
+.material-icons {
+	vertical-align: middle;
+	margin-right: 8px;
 }
 
-#skills {
-	font-family: "Times New Roman", Times, serif;
-	background-color: var(--custom-yellow);
-	color: var(--custom-text);
-	margin-top: -2px;
-}
-
-#levelSkills {
-	font-size: 12px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-
-}
-
-.progress {
-    background-color: #333; /* Fundo da barra */
-    border: 1px solid #fff; /* Contorno da barra */
-}
-
+/* Barra de Progresso */
 .progress .progress-bar {
-	background-color: #ffee00; /* Cor principal */
-    background-image: linear-gradient(
-		135deg,
-		rgba(35, 51, 67, 1.6) 25%,
-		transparent 25%,
-		transparent 50%,
-		rgba(35, 51, 67, 1.6) 50%,
-		rgba(35, 51, 67, 1.6) 75%,
-		transparent 75%,
-		transparent
-    );
-    background-size: 1rem 1rem;
+	background-color: var(--custom-yellow);
+	background-image: linear-gradient(135deg,
+			rgba(0, 0, 0, 0.2) 25%, transparent 25%,
+			transparent 50%, rgba(0, 0, 0, 0.2) 50%,
+			rgba(0, 0, 0, 0.2) 75%, transparent 75%,
+			transparent);
+	background-size: 1rem 1rem;
 	animation: progress-animation 45s linear infinite;
-	
+	color: var(--custom-text);
+	font-weight: bold;
 }
 
 @keyframes progress-animation {
-	from {
-		background-position: -100% 0;
-	}
-	to {
-		background-position: 100% 0;
-	}
+	from { background-position: 100% 0; }
+	to { background-position: -100% 0; }
 }
 
-
-
-#hobbies {
-	font-family: "Times New Roman", Times, serif;
-	background-color: var(--custom-yellow);
-	color: var(--custom-text);
+/* Thumbnail do Portfólio */
+.portfolio-thumbnail {
+	border: 2px solid var(--custom-card-header-bg);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#hobbiesGrid {
-	display: block;
-	padding-bottom: 10px;
-	}
-
-#hobbiesIco i {
-	font-size: 40px !important;
-	color: var(--custom-yellow);
+.portfolio-thumbnail:hover {
+	transform: scale(1.03);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-#col2linha1 div {
-	background-color: var(--custom-text);
-}
-
-.popover-header {
-	--bs-popover-max-width: 200px;
-	--bs-popover-border-color: #ccc;
-	--bs-popover-header-bg: rgb(35 51 67);
-	--bs-popover-header-color: var(--bs-white);
-	--bs-popover-body-padding-x: 1rem;
-	--bs-popover-body-padding-y: .5rem;
-}
-
-.custom-popover .popover-body, .popover-body {
-	padding: var(--bs-popover-body-padding-y) var(--bs-popover-body-padding-x);
-	color: var(--custom-yellow);
-}
-
-
-
-/* ----------------------------------- @media Styles -------------------------------------------------- */
-
-@media (min-width: 992px) and (max-width: 1200px) {
-	
-	#coluna1, #coluna2 {
-		margin-bottom: 30px;
-	}
-
-	.shareButton i {
-		font-size: 1.6em;
-	}
-
-	img#foto {
-		margin-top: -95px;
-		width: 170px;
-		height: 170px;
-	}
-
-	main {
-		padding-bottom: 20px !important;
-	}
-
-	#mapa img {
-		width: 120px;
-		height: 120px;
-		margin-bottom: 20px;
-	}
-
-	#mapa {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-	
-	#coluna2b {
-		padding-top: 15px !important;
-		padding-bottom: 0px !important;
-	}
-
-	#fundoAbout01 {
-		margin-bottom: 15px !important;
-	}
-	
-
-}
-
-@media (min-width: 912px) and (max-width: 991px) {
-
-	header h1 {
-		font-size: 3.2em;
-		margin-top: -30px;
-	}
-
-	header h2 {
-		font-size: 1.6em;
-	}
-
-	.shareButton i {
-		font-size: 1.6em;
-	}
-
-	img#foto {
-		margin-top: -75px;
-		width: 130px;
-		height: 130px;
-	}
-
-	#foto {
-		/*border: 3px solid #fff;*/
-		border: 12px solid #212529;
-	}
-
-	#mapa img {
-		width: 120px;
-		height: 120px;
-		margin-bottom: 20px;
-	}
-
-	#mapa {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-	#coluna1 {
-		max-height:max-content;
-	}
-
-	#coluna1b {
-		padding-bottom: 10px;
-		max-height:max-content;
-	}
-
-	#coluna1, #coluna2 {
-		max-height:1222px !important;
-	}
-
-	#levelSkills {
-		padding-bottom: 10px;
-	}
-
-	#hobbies {
-		margin-top:40px !important;
-		margin-bottom: 10px !important;
-	}
-
-	#hobbiesGroup {
-		padding-top: 30px;
-	}
-
-	#hobbiesIco{
-		display: grid !important;
-		grid-template-rows: repeat(3, auto); /* 3 linhas automáticas */
-		height: max-content !important; /* Ou a altura do contêiner pai */
-		place-content: center; /* Centraliza o grupo de itens no contêiner */
-		}
-
-	#hobbiesIco i{
-			padding: .5rem !important; ;
-		}
-
-	#coluna2a {
-		grid-column: auto / span 6;
-	}
-
-	#qrcodeCol {
-		grid-column: auto / span 6;
-	}
-		
-	#coluna2b {
-		padding-top: 20px !important;
-	}
-
-	div#fundoAbout01 {
-		margin-bottom: 1rem !important;
-	}
-
-	#fundoAbout02 img {
-		height: 200px;
-		width: auto;
-	}
-
-	#grupoAbout02 {
-		display: flex;
-		gap: 15px;
-		margin: 0;
-
-	}
-
-	#fundoProfissional {
-	margin-top: 20px;
-	}
-
-	#fundoEducation, #fundoProfissional {
-	flex: 1;
-	min-width: 0;
-	}
-
-}
-
-@media (min-width: 768px) and (max-width: 911px) {
-	
-	#hobbiesGroup {
-        padding-top: 0px !important;
-    }
-
-	div#coluna2b.py-5.text-center {
-		padding-bottom: 1.12rem !important;
-	}
-
-
-	header h1 {
-		font-size: 3.2em;
-		margin-top: -30px;
-	}
-
-	header h2 {
-		font-size: 1.6em;
-	}
-
-	.shareButton i {
-		font-size: 1.6em;
-	}
-
-	img#foto {
-		margin-top: -75px;
-		width: 130px;
-		height: 130px;
-	}
-
-	#foto {
-		/*border: 3px solid #fff;*/
-		border: 12px solid #212529;
-	}
-
-	main {
-		padding-bottom: 20px !important;
-	}
-
-	#mapa img {
-		width: 120px;
-		height: 120px;
-		margin-bottom: 20px;
-	}
-
-	#mapa {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-	#coluna1 {
-		max-height:max-content;
-	}
-
-	#coluna1b {
-		padding-bottom: 10px;
-		max-height:max-content;
-	}
-
-	#coluna2 {
-		max-height:1222px;
-	}
-
-	#nameSkills {
-		margin-top: .25rem !important;
-	}
-
-	#levelSkills {
-		padding-bottom: 20px ;
-	}
-
-	#hobbies {
-		margin-top:40px !important;
-		margin-bottom: 10px !important;
-	}
-
-	#hobbiesGroup {
-		padding-top: 30px;
-	}
-
-	#hobbiesIco{
-		display: grid !important;
-		grid-template-rows: repeat(3, auto); /* 3 linhas automáticas */
-		height: max-content !important; /* Ou a altura do contêiner pai */
-		place-content: center; /* Centraliza o grupo de itens no contêiner */
-		}
-
-	#hobbiesIco i{
-			padding: .5rem !important; ;
-		}
-
-	#coluna2a {
-		grid-column: auto / span 6;
-	}
-
-	#qrcodeCol {
-		grid-column: auto / span 6;
-	}
-		
-	#coluna2b {
-		padding-top: 20px !important;
-	}
-
-	div#fundoAbout01 {
-		margin-bottom: 1rem !important;
-	}
-
-	#fundoAbout02 img {
-		height: 200px;
-		width: auto;
-	}
-
-	#grupoAbout02 {
-		display: block;
-	}
-
-	#fundoProfissional {
-	margin-top: 20px;
-	}
-
-	#fundoEducation, #fundoProfissional {
-	padding-bottom: 1px;
-	}
-
-}
-
-@media (min-width: 768px) and (max-width: 882px) and (orientation: landscape) {
-	#coluna2 {
-		max-height: 1223px;
-	}
-}
-
-@media (min-width: 667px) and (max-width: 767px) and (orientation: landscape) {
-
-	.container {
-		max-width:100% !important;
-	}
-
-	header {
-		height: 200px !important;
-	}
-
-	header h1 {
-		font-size: 2.2em;
-		margin-top: -30px;
-	}
-
-	header h2 {
-		font-size: 1.2em;
-	}
-
-	.shareButton i {
-		font-size: 1.6em;
-	}
-
-	img#foto {
-		margin-top: -65px;
-		width: 110px;
-		height: 110px;
-	}
-
-	#foto {
-		/*border: 3px solid #fff;*/
-		border: 12px solid #212529;
-	}
-
-	#mapa img {
-		width: 100px;
-		height: 100px;
-		margin-bottom: 20px;
-		margin-right: 10px;
-	}
-
-	#mapa b {
-		font-size: 0.9em;
-	}
-
-	#mapa {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-	#coluna1 {
-		max-height:max-content;
-	}
-
-	#coluna1 h3 {
-		font-size: 1.2em;
-	}
-
-	#coluna1 h4 {
-		font-size: 1.3em;
-	}
-
-	#coluna1b {
-		padding-bottom: 77px;
-		max-height:max-content;
-	}
-
-	#coluna1, #coluna2 {
-		max-height:1224px !important;
-	}
-
-	#levelSkills {
-		padding-bottom: 20px;
-	}
-
-	#nameSkills {
-		font-size: 0.8em;
-		margin-top: .35rem !important;
-	}
-
-	.progress {
-		width: 100% !important;
-	}
-
-	#hobbies {
-		margin-top:40px !important;
-		margin-bottom: 10px !important;
-	}
-
-	#hobbiesGroup {
-		padding-top: 30px;
-	}
-
-	#hobbiesIco{
-		display: grid !important;
-		grid-template-rows: repeat(3, auto); /* 3 linhas automáticas */
-		height: max-content !important; /* Ou a altura do contêiner pai */
-		place-content: center; /* Centraliza o grupo de itens no contêiner */
-		}
-
-	#hobbiesIco i{
-			padding: .5rem !important; ;
-		}
-
-	#coluna2a {
-		grid-column: auto / span 12;
-	}
-
-	#qrcodeCol {
-		display: none;
-	}
-		
-	#coluna2b {
-		padding-top: 20px !important;
-	}
-
-	div#fundoAbout01 {
-		margin-bottom: 1rem !important;
-	}
-
-	#fundoAbout02 img {
-		height: 200px;
-		width: auto;
-	}
-
-	#grupoAbout02 {
-		display: block;
-	}
-
-	#fundoProfissional {
-	margin-top: 20px;
-	}
-
-	#fundoEducation, #fundoProfissional {
-	padding-bottom: 1px;
-	}
-
-}
-
-
-@media (max-width:768px) {
-
-	.navbar>.container-fluid {
-		justify-content: center !important;
-	}
-
-	#col2linha2 div.grid {
-		flex-wrap: wrap;
-	}
-
-	#coluna1b {
-		padding-bottom: 0;
-	}
-
-	div#coluna2b.py-5.text-center {
-		padding-top: 2rem !important;
-	}
-
-	#fundoAbout01 {
-		margin-bottom: 1rem !important;
-	}
-
-	#fundoEducation {
-		padding-top: 2rem !important;
-	}
-
-	#fundoProfissional {
-		margin-top: 1rem !important;
-	}
-
-	#educationList li, #profissionalList li {
-		margin-bottom: 1rem !important;
-	}
-
-
-
-/* ###################  OLHAR A PARTIR DAQUI DE CIMA #########################  */
-
-
-}
-
-
-@media (min-width: 540px) and (max-width:666px) {
-
-	header h1 {
-		font-size: 2.2em;
-		margin-top: -30px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	header h2 {
-		font-size: 1.2em;
-	}
-
-	.shareButton i {
-		font-size: 1.6em;
-	}
-
-	img#foto {
-		margin-top: -68px;
-		width: 120px;
-		height: 120px;
-	}
-
-	#foto {
-		/*border: 3px solid #fff;*/
-		border: 12px solid #212529;
-	}
-
-	main {
-		padding-bottom: 20px !important;
-	}
-
-	#mapa img {
-		width: 120px;
-		height: 120px;
-		margin-bottom: 20px;
-	}
-
-	#mapa {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-	#coluna1 {
-		max-height:max-content;
-	}
-
-	#coluna1b {
-		padding-bottom: 10px;
-		max-height:max-content;
-	}
-
-	#coluna2 {
-		max-height:1222px;
-	}
-
-	#levelSkills {
-		padding-bottom: 20px ;
-	}
-
-	.progress {
-		width: 50% !important;
-	}
-
-	#hobbies {
-		margin-top:40px !important;
-		margin-bottom: 10px !important;
-	}
-
-	#hobbiesGroup {
-		padding-top: 30px;
-	}
-
-	#hobbiesIco{
-		grid-template-rows: repeat(3, auto); /* 3 linhas automáticas */
-		height: max-content !important; /* Ou a altura do contêiner pai */
-		place-content: center; /* Centraliza o grupo de itens no contêiner */
-		}
-
-	#hobbiesIco i{
-			padding: .5rem !important; ;
-		}
-
-	#coluna2a {
-		grid-column: auto / span 12;
-	}
-	
-	#qrcodeCol {
-		display: none;
-	}
-		
-	#coluna2b {
-		padding-top: 20px !important;
-		padding-bottom: 30px !important;
-	}
-
-	div#fundoAbout01 {
-		margin-bottom: 1rem !important;
-	}
-
-	#fundoAbout02 img {
-		height: 200px;
-		width: auto;
-	}
-
-	#grupoAbout02 {
-		display: block;
-	}
-
-	#fundoProfissional {
-		margin-top: 20px;
-	}
-	
-	#fundoEducation, #fundoProfissional {
-		padding-bottom: 5px;
-	}
-
-}
-
-
-@media (min-width: 415px) and (max-width: 539px) {
-	body {
-		max-height: 2465px;
-	}
-
-	#coluna2b {
-		max-height: 1010px;		
-	}
-
-	.shareButton i {
-		margin-top: 35px;
-		right: 10px;
-		top: -30px;
-	}
-
-	#lang {
-		color: #212529;
-		position: absolute;
-		  left: 15px;
-		  top: 1px;
-		  z-index: 4;
-	}
-
-	ul.dropdown-menu-end[data-bs-popper] {
-		left: 0;
-		right: auto;
-	}
-
-	header.navbar {
-		height: 180px ;
-        width:100%;
-		display: flex !important;
-		justify-content: center !important;
-		align-items: center !important;
-	}
-
-	header h1 {
-		font-size: 1.8em;
-		margin-top: -40px;
-		margin-left: -20px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	header h2 {
-		font-size: 0.9em;
-		margin-top: 0px;
-		margin-left: -20px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-
-	img#foto {
-		margin-top: -64px;
-		width: 110px;
-		height: 110px;
-	}
-
-	#foto {
-		/*border: 3px solid #fff;*/
-		border: 12px solid #212529;
-	}
-
-	#hobbiesGrid {
-	display: block;
-	}
-
-	#coluna2 {
-		max-height: max-content;
-		margin-bottom: 10px;
-	}
-
-	#coluna2a {
-		grid-column: auto / span 12;
-	}
-
-	#qrcodeCol {
-		display: none;
-	}
-
-	#fundoAbout02 img {
-		height: 200px;
-		width: auto;
-	}
-
-	#grupoAbout02 {
-		display: block;
-	}
-
-	#fundoProfissional {
-	margin-top: 40px;
-	}
-
-	#fundoEducation, #fundoProfissional {
-	padding-bottom: 5px;
-	}
-
-}
-
-@media (min-width: 270px) and (max-width: 414px) {
-
-	body {
-		max-height: 2465px;
-	}
-
-	#coluna2b {
-		max-height: 1010px;		
-	}
-
-	.shareButton i {
-		margin-top: 35px;
-		right: 10px;
-		top: -30px;
-	}
-
-	#lang {
-		color: #212529;
-		position: absolute;
-		  left: 15px;
-		  top: 1px;
-		  z-index: 4;
-	}
-
-	ul.dropdown-menu-end[data-bs-popper] {
-		left: 0;
-		right: auto;
-	}
-
-	header.navbar {
-		height: 180px ;
-        width:100%;
-		display: flex !important;
-		justify-content: center !important;
-		align-items: center !important;
-	}
-
-	header h1 {
-		font-size: 1.8em;
-		margin-top: -40px;
-		margin-left: -20px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	header h2 {
-		font-size: 0.9em;
-		margin-top: 0px;
-		margin-left: -20px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-
-	img#foto {
-		margin-top: -64px;
-		width: 110px;
-		height: 110px;
-	}
-
-	#foto {
-		/*border: 3px solid #fff;*/
-		border: 12px solid #212529;
-	}
-
-	#mapa img {
-		width: 120px;
-		height: 120px;
-		margin-bottom: 20px;
-	}
-
-	#mapa {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-	#hobbiesGrid {
-	display: block;
-	}
-
-	#coluna2 {
-		max-height: max-content;
-		margin-bottom: 10px;
-	}
-
-	#coluna2a {
-		grid-column: auto / span 12;
-	}
-
-	#qrcodeCol {
-		display: none;
-	}
-
-	#fundoAbout02 img {
-		height: 200px;
-		width: 100%;
-	}
-
-	#fundoAbout02 {
-		display: flex;
-		margin: auto;
-		justify-content: center;
-		padding: .5rem;
-	}
-
-
-	#grupoAbout02 {
-		display: flex;
-		justify-content: space-between;
-		margin: auto;
-	}
-
-	#fundoProfissional {
-	margin-top: 40px;
-	}
-
-	#fundoEducation, #fundoProfissional {
-	padding-bottom: 5px;
-	}
-
-	ul li::before {
-		margin-right: -20px; /* Espaçamento entre o marcador e o texto */
-		left: -44px; /* Ajuste a posição horizontal */
-	}
-	
-	#educationList li,
-	#profissionalList li {
-		padding-left: 10px;
-	}
-
+/* =================================================================== */
+/* 3. ESTILOS DE IMPRESSÃO
+/* =================================================================== */
+@media print {
+  /* Oculta elementos que não são relevantes para a impressão */
+  .dropdown,
+  #share-button,
+  #print-button,
+  footer,
+  .popover {
+    display: none !important;
+  }
+
+  /* Garante que o corpo do documento tenha um fundo branco para impressão */
+  body {
+    background-color: #fff !important;
+  }
 }

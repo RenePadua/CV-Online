@@ -1,269 +1,250 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="e7RXTWO5wZ2KxzbtGyNmDHTne6k4O1JAfQ6vNEkvtI4" />
-  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <title>CV - Renê</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css">
+  <title>CV - Renê Pádua</title>
 </head>
+
 <body class="container bg-body-tertiary" data-bs-theme="dark">
-  <header class="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <div>
-          <h1 class="text-start">Renê Pádua</h1>
-          <h2>Desenvolvedor Web Front-End Júnior</h2>
+
+  <!-- CABEÇALHO -->
+  <header class="header-main text-center p-4 p-lg-5">
+    <div class="container">
+      <div class="d-flex justify-content-end gap-3 mb-4">
+        <div class="dropdown">
+          <i class="bi bi-translate dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+            style="cursor: pointer;"></i>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a id="pt" class="dropdown-item" href="#">Português (Brasil)</a></li>
+            <li><a id="en" class="dropdown-item" href="index-en.html">English</a></li>
+          </ul>
         </div>
-      </a>
-    </div>
-   <div>
-    <div id="lang">
-      <div class="dropdown">
-        <i class="bi bi-translate dropdown-toggle show" data-bs-toggle="dropdown" data-bs-placement="bottom" aria-expanded="true" data-bs-display="static"></i>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a  id="pt" class="dropdown-item" href="#">Português (Brasil)</a></li>
-          <li><a  id="en" class="dropdown-item" href="index-en.html">English</a></li>
-        </ul>
+        <div id="share-button" style="cursor: pointer;">
+          <i class="bi bi-share"></i>
+        </div>
+        <!-- 
+        <div id="print-button" style="cursor: pointer;" title="Imprimir/Salvar PDF">
+          <i class="bi bi-printer"></i>
+        </div>
+        -->
       </div>
-    </div>  
-    <div class="shareButton">
-     <i data-bs-container="body" class="bi bi-share"></i>
+      <img id="foto" src="img/rene.jpg" alt="Foto de Renê Pádua" class="rounded-circle border border-5 border-dark mb-4">
+      <h1 class="display-4">Renê Pádua</h1>
+      <p class="lead">Desenvolvedor Web Front-End Júnior</p>
     </div>
-  </div>
   </header>
-  <main class="p-0 m-0 border-0 bd-example m-0 border-0 bd-example-row border-opacity-10">
-    <div class="container text-center">
-      <div class="row">
-        <div id="coluna1" class="col-sm-3 bg-dark border border-0">
-          <div id="coluna1b">
-            <div id="coluna1bInside">
-              <img id="foto" src="img/rene.jpg" alt="Logo" width="220" height="220"
-                class="d-inline-block align-text-top">
-              <div id="mapa" class="p-3">
-                <img src="img/brasil.png" alt="Mapa do Brasil" width="220" height="220"
-                title="São Paulo/SP"
-                  class="d-inline-block align-text-top">
-                <br>
-                <div class="mt-1">
-                  <b>São Paulo-SP</b>
-                </div>
-              </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container my-5">
+    <div class="row g-4">
+
+      <!-- COLUNA DA ESQUERDA (ASIDE) -->
+      <aside class="col-lg-4">
+        <!-- CONTATO -->
+        <section class="card mb-4">
+          <div class="card-header">
+            <h4><i class="bi bi-person-rolodex me-2"></i>Contato</h4>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-around fs-2">
+              <i class="bi bi-mailbox" title="E-mail" data-bs-toggle="popover" data-bs-placement="top"
+                data-bs-content="rene.padua@gmail.com"></i>
+              <a href='https://www.linkedin.com/in/renê-pádua-99684729' target='_blank' title="LinkedIn"><i
+                  class="bi bi-linkedin"></i></a>
+              <a href='https://wa.me/5511975071920?text=Olá!%20Vi%20seu%20CV%20Online%20e%20gostaria%20de%20entrar%20em%20contato!'
+                target='_blank' title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a href='https://github.com/RenePadua' target='_blank' title="GitHub"><i class="bi bi-github"></i></a>
             </div>
-            <div id="skills" class="mt-3">
-              <h3>Habilidades</h3>
-            </div>
-            <div class="text-center mt-3 pb-2">
-              <h4 id="idioma-heading" class="mt-3"><i class="material-icons">&#xe153;</i> Idioma</h4>
-              <div id="nameSkills" class="mt-3">
-                PORTUGUÊS
-                <div id="levelSkills" class="container mt-1">
-                  <div class="progress" style="width: 75%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 100%"></div>
-                  </div>
-                </div>
-              </div>
-              <div id="nameSkills" class="mt-3">
-                INGLÊS
-                <div id="levelSkills" class="container mt-1">
-                  <div class="progress" style="width: 75%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 45%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center mt-3 pb-1">
-              <h4 id="software-heading"><i class="material-icons">computer</i> Softwares</h4>
-              <div id="nameSkills">
-                HTML
-                <div id="levelSkills" class="container mt-1">
-                  <div class="progress" style="width: 75%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 90%"></div>
-                  </div>
-                </div>
-              </div>
-              <div id="nameSkills" class="text-center mt-3">
-                CSS
-                <div id="levelSkills" class="container mt-1">
-                  <div class="progress" style="width: 75%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 70%"></div>
-                  </div>
-                </div>
-              </div>
-              <div id="nameSkills" class="text-center mt-3">
-                JAVASCRIPT
-                <div id="levelSkills" class="container text-center mt-1">
-                  <div class="progress" style="width: 75%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 45%"></div>
-                  </div>
-                </div>
-              </div>
-              <div id="nameSkills" class="text-center mt-3">
-                PHP
-                <div id="levelSkills" class="container mt-1">
-                  <div class="progress" style="width: 75%" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 35%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="hobbies" class="mt-3">
-              <h3>Hobbies</h3>
-            </div>
-            <div id="hobbiesGroup" class="text-center m-3">
-              <h4>
-                <div id="hobbiesGrid" class="grid">
-                  <div id="hobbiesIco" class="p-1 d-flex justify-content-around g-col-3">
-                    <i class="material-icons m-1 pb-3" title="Corrida/Running">directions_run</i>
-                    <i class="material-icons m-1 pt-3" title="Game">videogame_asset</i>
-                    <i class="material-icons m-1 pb-3" title="Bicicleta/Bike">directions_bike</i>
-                  </div>
-                </div>
-              </h4>
+            <hr>
+            <div class="text-center">
+              <img src="img/brasil.png" alt="Mapa do Brasil" width="100" height="100" title="São Paulo/SP">
+              <p class="mt-2 mb-0"><b>São Paulo-SP</b></p>
             </div>
           </div>
-        </div>
-        <div id="coluna2" class="col-sm-9 bg-dark border border-0">
-          <div id="col2linha1" class="row">
-            <div class="grid bg-dark">
-              <div id="coluna2a" class="p-2 container border g-col-8">
-                <!-- Level 2: .col-9 .col-sm-8 -->
-                <!-- Links (Mail/LinkedIn/WhatsApp/GitHub) -->
-                <div id="coluna2alinha1" class="d-flex justify-content-around">
-                  <div title="Email" class="p-4">
-                    <i data-bs-container="body" data-bs-title="E-mail" data-bs-toggle="popover" data-bs-placement="top"
-                      data-bs-custom-class="custom-popover" data-bs-content="rene.padua@gmail.com"
-                      class="bi bi-mailbox"></i>
-                  </div>
-                  <div  title="LinkedIn" class="p-4">
-                    <a href='https://www.linkedin.com/in/renê-pádua-99684729' target='_blank'><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div id="coluna2alinha2" class="d-flex justify-content-around">
-                  <div title="WhatsApp" class="p-4">
-                    <a href='https://wa.me/5511975071920?text=Olá!%20Vi%20seu%20CV%20Online%20e%20gostaria%20de%20entrar%20em%20contato!' target='_blank'><i class="bi bi-whatsapp"></i></a>
-                  </div>
-                  <div title="GitHub" class="p-4">
-                    <a href='https://github.com/RenePadua' target='_blank'><i class="bi bi-github"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div id="qrcodeCol" class="container border g-col-4">
-                <!-- Level 2: .col-3 .col-sm-4  -->
-                <img id="qrcode" alt="qrcode" src="img/qrcode-rene.png">
-              </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="card mb-4">
+          <div class="card-header">
+            <h4><i class="bi bi-tools me-2"></i>Habilidades</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title-custom"><i class="bi bi-translate me-2"></i>Idioma</h5>
+            <p class="mb-1">PORTUGUÊS</p>
+            <div class="progress mb-3" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 100%">Nativo</div>
+            </div>
+            <p class="mb-1">INGLÊS</p>
+            <div class="progress mb-3" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 45%">B1</div>
+            </div>
+            <hr>
+            <h5 class="card-title-custom"><i class="bi bi-pc-display me-2"></i>Softwares</h5>
+            <p class="mb-1">HTML</p>
+            <div class="progress mb-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+            <p class="mb-1">CSS</p>
+            <div class="progress mb-3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+            <p class="mb-1">JAVASCRIPT</p>
+            <div class="progress mb-3" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 45%"></div>
+            </div>
+            <p class="mb-1">PHP</p>
+            <div class="progress" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 35%"></div>
             </div>
           </div>
-          <div id="coluna2b" class="py-5 text-center">
+        </section>
 
-            <!-- Sobre mim -->
+        <!-- HOBBIES -->
+        <section class="card">
+          <div class="card-header">
+            <h4><i class="bi bi-joystick me-2"></i>Hobbies</h4>
+          </div>
+          <div class="card-body text-center">
+            <div class="d-flex justify-content-around fs-1">
+              <i class="bi bi-universal-access" title="Corrida/Running"></i>
+              <i class="bi bi-controller" title="Game"></i>
+              <i class="bi bi-bicycle" title="Bicicleta/Bike"></i>
+            </div>
+          </div>
+        </section>
+      </aside>
 
-            <div id="fundoAbout01" class="g-col-6 mb-5">
-              <!-- Level 1: .col-8 .col-sm-6 -->
+      <!-- COLUNA DA DIREITA (CONTEÚDO) -->
+      <div class="col-lg-8">
+        <!-- SOBRE MIM -->
+        <section class="card mb-4">
+          <div class="card-header">
+            <h4>🧔🏻 Sobre mim!</h4>
+          </div>
+          <div class="card-body">
+            <p>Desenvolvedor Front-End Júnior apaixonado por criar interfaces intuitivas e responsivas. Com experiência em HTML, CSS, JavaScript e Bootstrap, busco uma oportunidade para aplicar minhas habilidades, aprender novas tecnologias e contribuir para projetos desafiadores. Tenho um perfil proativo, boa capacidade de resolução de problemas e estou sempre em busca de aprimoramento técnico.</p>
+          </div>
+        </section>
 
-              <div id="aboutTitle" class="py-2">
-                <h4>🧔🏻 Sobre mim!</h4>
+        <!-- PROJETOS -->
+        <section class="card mb-4">
+          <div class="card-header">
+            <h4>
+              <i class="bi bi-kanban-fill me-2"></i>Projetos
+            </h4>
+          </div>
+          <div class="card-body">
+            <!-- Projeto 1 -->
+            <div class="row mb-4">
+              <div class="col-md-4 mb-3 mb-md-0">
+                <img src="img/projects/project-appparking.png" class="img-fluid rounded portfolio-thumbnail" alt="Thumbnail do Web App de Estacionamento">
               </div>
-              <div id="fundoAbout02">
-
-                <!-- Level 2-coluna1 -->
-
-                <img class="m-2 text-center" src="img/profile.png" width="auto" height="280px">
+              <div class="col-md-8">
+                <h5 class="text-custom-yellow">Web App de Estacionamento</h5>
+                <p>Projeto de Web App para gerenciamento de Estacionamento feito para o Trabalho de Conclusão.</p></p>
+                <div class="mb-2">
+                  <span class="badge bg-secondary">HTML</span>
+                  <span class="badge bg-secondary">CSS</span>
+                  <span class="badge bg-secondary">Bootstrap</span>
+                  <span class="badge bg-secondary">JavaScript</span>
+                  <span class="badge bg-secondary">PHP</span>
+                </div>
+                <!-- <a href="URL_DO_SEU_VIDEO_AQUI" class="btn btn-sm btn-outline-warning me-2" target="_blank"><i class="bi bi-play-btn-fill me-1"></i> Ver Demonstração</a> -->
+                <a href="https://github.com/RenePadua/TCC-AppParking" class="btn btn-sm btn-outline-light" target="_blank"><i class="bi bi-github me-1"></i> Código-Fonte</a>
               </div>
             </div>
-            <div id="col2linha2" class="row">
-              <div id="grupoAbout02" class="grid">
-                <div id="fundoEducation" class="g-col-6">
-                  <!-- Level 2: .col-4 .col-sm-6 -->
-                  <div id="educationTitle" class="py-2">
-                    <i class="bi bi-school"></i>
-                    <h4>🎓 Educação</h4>
-                  </div>
-                  <div id="educationFront">
-                    <!-- Level 2-coluna1 -->
-                    <div id="educationList" class="container mt-3 text-start">
-                      <ul>
-                        <li>
-                          <b>2023</b>
-                          <br>
-                          <span>Fatec-Baixada Santista</span>
-                          <br>
-                          Sistemas para Internet
-                        </li>
-                        <li>
-                          <b>2008</b>
-                          <br>
-                          <span>Uniso</span>
-                          <br>
-                          Direito
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            <hr>
+            <!-- Projeto 2 -->
+            <div class="row mb-3">
+              <div class="col-md-4 mb-3 mb-md-0">
+                <img src="img/projects/project-integracao.png" class="img-fluid rounded portfolio-thumbnail" alt="Thumbnail do Projeto da empresa de Consultoria">
+              </div>
+              <div class="col-md-8">
+                <h5 class="text-custom-yellow">Landing Page de Consultoria</h5>
+                <p>Projeto de Landing Page para uma empresa de Consultoria na área da Saúde.</p>
+                <div class="mb-2">
+                  <span class="badge bg-secondary">HTML</span>
+                  <span class="badge bg-secondary">CSS</span>
+                  <span class="badge bg-secondary">Bootstrap</span>
+                  <span class="badge bg-secondary">JavaScript</span>
                 </div>
-                <div id="fundoProfissional" class="g-col-6">
-                  <!-- Level 2: .col-4 .col-sm-6 -->
-                  <div id="profissionalTitle" class="py-2">
-                    <h4>👔 Profissional</h4>
-                  </div>
-                  <div id="profissionalFront">
-                    <!-- Level 2-coluna1 -->
-                    <div id="profissionalList" class="container mt-3 text-start">
-                      <ul>
-                        <li>
-                          <b>2022-2023</b>
-                          <br>
-                           <span>Sec. de Educação-SV</span>
-                          <br>
-                          Estagiário de TI
-                          <i data-bs-container="body"
-                              data-bs-title="Estagiário de TI"
-                              data-bs-toggle="popover"
-                              data-bs-html="true"
-                              data-bs-placement="top"
-                              data-bs-custom-class="custom-popover"
-                              class="bi bi-question-circle"
-                              data-bs-content="<ul><li>Suporte técnico de Hardware e Software à todos os departamentos e escolas da
-                                rede municipal de São Vicente;</li><li>Desenvolvimento Front-End em Web Apps voltados à
-                                  demandas internas.</li></ul>">
-                            </i>
-                        </li>
-                        <li>
-                          <b>2020</b>
-                          <br>
-                          <span>Fatec-BS</span>
-                          <br>
-                          Estagiário CCW - Equipe Web
-                          <i data-bs-container="body"
-                              data-bs-title="Estagiário CCW (Criação de Conteúdo Web)"
-                              data-bs-toggle="popover"
-                              data-bs-html="true"
-                              data-bs-placement="top"
-                              data-bs-custom-class="custom-popover"
-                              class="bi bi-question-circle"
-                              data-bs-content="<ul><li>Criação e Edição de imagens e vídeos para mídias sociais;</li><li>Gerenciamento de “Lives” promovidas pela Fatec-BS.</li></ul>">
-                            </i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                <a href="https://integracaoconsultoria.com.br" class="btn btn-sm btn-outline-warning me-2" target="_blank">Ver ao Vivo</a>
+                <a href="https://github.com/RenePadua/Projeto-Integracao" class="btn btn-sm btn-outline-light" target="_blank"><i class="bi bi-github me-1"></i> Código-Fonte</a>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <!-- EDUCAÇÃO -->
+        <section class="card mb-4">
+          <div class="card-header">
+            <h4>
+              <i class="bi bi-mortarboard-fill me-2"></i>Educação
+            </h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <b>2023</b><br>
+                <span class="text-custom-yellow">Fatec-Baixada Santista</span><br>
+                Sistemas para Internet
+              </li>
+              <li>
+                <b>2008</b><br>
+                <span class="text-custom-yellow">Uniso</span><br>
+                Direito
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- PROFISSIONAL -->
+        <section class="card">
+          <div class="card-header">
+            <h4>
+              <i class="bi bi-briefcase-fill me-2"></i>Profissional
+            </h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <b>2022-2023</b><br>
+                <span class="text-custom-yellow">Sec. de Educação-SV</span><br>
+                Estagiário de TI
+                <i class="bi bi-question-circle" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-title="Atividades" data-bs-content="&lt;ul&gt;&lt;li&gt;Suporte técnico de Hardware e Software.&lt;/li&gt;&lt;li&gt;Desenvolvimento Front-End em Web Apps internos.&lt;/li&gt;&lt;/ul&gt;"></i>
+                <div class="experience-details d-none">
+                  <ul><li>Suporte técnico de Hardware e Software.</li><li>Desenvolvimento Front-End em Web Apps internos.</li></ul>
+                </div>
+              </li>
+              <li>
+                <b>2020</b><br>
+                <span class="text-custom-yellow">Fatec-BS</span><br>
+                Estagiário CCW - Equipe Web
+                <i class="bi bi-question-circle" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-title="Atividades" data-bs-content="&lt;ul&gt;&lt;li&gt;Criação e Edição de imagens e vídeos para mídias sociais.&lt;/li&gt;&lt;li&gt;Gerenciamento de 'Lives' da faculdade.&lt;/li&gt;&lt;/ul&gt;"></i>
+                <div class="experience-details d-none">
+                  <ul><li>Criação e Edição de imagens e vídeos para mídias sociais.</li><li>Gerenciamento de 'Lives' da faculdade.</li></ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-    </div>
-    </div>
-    </div>
     </div>
   </main>
+
+  <footer class="text-center text-muted py-4">
+    <p>&copy; 2024 Renê Pádua. Todos os direitos reservados.</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -272,6 +253,12 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <script src="js/javascript.js"></script>
+  <script>
+    // Funcionalidade do botão de impressão
+    document.getElementById('print-button').addEventListener('click', function () {
+      window.print();
+    });
+  </script>
 
 </body>
 

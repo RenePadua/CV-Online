@@ -15,11 +15,7 @@ CV-Online/
 │   └── javascripts.js
 ├── img/
 │    └── brasil.png
-│    └── profile-en.png
-│    └── profile.png
-│    └── qrcode-rene.png
 │    └── rene.jpg
-│    └── setas.png
 ├── favicon.ico
 ├── index.html
 ├── index-en.html
